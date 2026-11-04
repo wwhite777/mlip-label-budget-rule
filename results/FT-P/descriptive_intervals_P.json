@@ -1,0 +1,252 @@
+[
+  {
+    "method": "R0_mace_medium",
+    "AP": 0.6114260943665141,
+    "AP_interval": [
+      0.6044938396901184,
+      0.6181865097007769
+    ],
+    "AUROC_interval": [
+      0.8445245924962315,
+      0.8507439292996157
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_chgnet",
+    "AP": 0.60805084185937,
+    "AP_interval": [
+      0.6014511133736397,
+      0.6148224498617917
+    ],
+    "AUROC_interval": [
+      0.8347771473559484,
+      0.8413668205861072
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_sevenn",
+    "AP": 0.6635514590936067,
+    "AP_interval": [
+      0.6575695569271651,
+      0.6698186771257245
+    ],
+    "AUROC_interval": [
+      0.8549133605341179,
+      0.861091046425324
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_mattersim_5m",
+    "AP": 0.7650344582932962,
+    "AP_interval": [
+      0.7605538662315607,
+      0.7696131896057752
+    ],
+    "AUROC_interval": [
+      0.8932815017061226,
+      0.8978427672578994
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_orb",
+    "AP": 0.7699626212297794,
+    "AP_interval": [
+      0.7655069650956431,
+      0.7743655896146759
+    ],
+    "AUROC_interval": [
+      0.8952137859081581,
+      0.8996886765890728
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@1000",
+    "AP": 0.603160611313596,
+    "AP_interval": [
+      0.596404578090936,
+      0.6099551089970451
+    ],
+    "AUROC_interval": [
+      0.8478224606647309,
+      0.8531188825815486
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@1000",
+    "reference": "R0_mace_medium",
+    "contrast": "matched_reference",
+    "AP_difference": -0.008265483052918077,
+    "AP_interval": [
+      -0.010383054369153216,
+      -0.006163283996072577
+    ],
+    "AUROC_interval": [
+      0.0016822352485567516,
+      0.004044896195459008
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@1000",
+    "AP": 0.7664420444850283,
+    "AP_interval": [
+      0.7619589491187785,
+      0.7708355341654731
+    ],
+    "AUROC_interval": [
+      0.8946997447643743,
+      0.8991642921961055
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@1000",
+    "reference": "R0_orb",
+    "contrast": "matched_reference",
+    "AP_difference": -0.003520576744751147,
+    "AP_interval": [
+      -0.003883657227965165,
+      -0.003181327306213633
+    ],
+    "AUROC_interval": [
+      -0.0006470441346780375,
+      -0.00042091723145021856
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@3000",
+    "AP": 0.6209215699706745,
+    "AP_interval": [
+      0.6141483641926336,
+      0.6277619902253738
+    ],
+    "AUROC_interval": [
+      0.8554837872137896,
+      0.8605648408576915
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@3000",
+    "reference": "R0_mace_medium",
+    "contrast": "matched_reference",
+    "AP_difference": 0.00949547560416042,
+    "AP_interval": [
+      0.006905651758001796,
+      0.01212533834435816
+    ],
+    "AUROC_interval": [
+      0.008809598237543171,
+      0.011898831395730586
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@3000",
+    "AP": 0.7699638835060086,
+    "AP_interval": [
+      0.7655081757169464,
+      0.774367113688826
+    ],
+    "AUROC_interval": [
+      0.8952137758011008,
+      0.8996886634151622
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@3000",
+    "reference": "R0_orb",
+    "contrast": "matched_reference",
+    "AP_difference": 1.262276229208048e-06,
+    "AP_interval": [
+      1.1173200737124578e-06,
+      1.4208222421152605e-06
+    ],
+    "AUROC_interval": [
+      -2.0019923391290108e-08,
+      3.175179872361156e-08
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@10000",
+    "AP": 0.6502776143269569,
+    "AP_interval": [
+      0.6438629440057942,
+      0.6567273347443746
+    ],
+    "AUROC_interval": [
+      0.8634518980549838,
+      0.8684796927667827
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@10000",
+    "reference": "R0_mace_medium",
+    "contrast": "matched_reference",
+    "AP_difference": 0.03885151996044278,
+    "AP_interval": [
+      0.03519814278427279,
+      0.04261137266591818
+    ],
+    "AUROC_interval": [
+      0.016206264943013683,
+      0.020259784664332026
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@10000",
+    "AP": 0.7699639025971642,
+    "AP_interval": [
+      0.7655081164479223,
+      0.7743671352763962
+    ],
+    "AUROC_interval": [
+      0.8952137771670391,
+      0.8996886664437315
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@10000",
+    "reference": "R0_orb",
+    "contrast": "matched_reference",
+    "AP_difference": 1.2813673847533735e-06,
+    "AP_interval": [
+      1.1258150075410533e-06,
+      1.4512120868614975e-06
+    ],
+    "AUROC_interval": [
+      -1.718431174024815e-08,
+      3.827522130350758e-08
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  }
+]

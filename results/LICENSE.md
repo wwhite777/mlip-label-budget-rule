@@ -1,0 +1,1 @@
+The numerical results and supplied figures are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Attribute Woncheol Jeong and Hayoung Oh, and retain the WBM/Matbench Discovery attribution in DATA_SOURCES.md. Software is covered by the root MIT LICENSE.

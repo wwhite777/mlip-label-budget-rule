@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "synthetic_only": false,
+  "all_requested_cpu_units_complete": true,
+  "execution_complete": true,
+  "designs": [
+    "P"
+  ],
+  "budgets": {
+    "P": [
+      100,
+      300,
+      1000,
+      3000,
+      10000
+    ],
+    "S": [
+      300,
+      1000,
+      3000,
+      10000
+    ]
+  },
+  "replicates": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "B": 2000,
+  "judge": {
+    "success": true,
+    "status": "SUCCESS",
+    "low_budgets": {
+      "300": true,
+      "1000": true
+    },
+    "qualifying_high_contrasts": [
+      "A5f_mace_medium@10000",
+      "A5f_chgnet@10000",
+      "A5f_sevenn@10000",
+      "A5f_mattersim_5m@10000",
+      "A5f_orb@10000"
+    ],
+    "eligible": true,
+    "complete": true,
+    "C05_confirmatory": true,
+    "synthetic_only": false,
+    "scientific_reading_authorized": true,
+    "completion_scope": "design-P F1/F2 only; F3/F4/S/mechanism reported separately"
+  }
+}

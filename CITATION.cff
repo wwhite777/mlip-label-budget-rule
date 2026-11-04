@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this version using the metadata below."
+type: software
+title: "Label-budget rules for correcting interatomic-potential stability scores"
+version: "2.0.0-rc1"
+date-released: 2026-11-04
+doi: 10.5281/zenodo.23944808
+repository-code: "https://github.com/wwhite777/mlip-label-budget-rule"
+url: "https://doi.org/10.5281/zenodo.23944808"
+license: MIT
+authors:
+  - family-names: Jeong
+    given-names: Woncheol
+    orcid: "https://orcid.org/0000-0001-9484-7808"
+    affiliation: "Sungkyunkwan University"
+  - family-names: Oh
+    given-names: Hayoung
+    orcid: "https://orcid.org/0000-0002-7362-5138"
+    affiliation: "Sungkyunkwan University"

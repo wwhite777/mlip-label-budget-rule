@@ -1,0 +1,19 @@
+# Distribution transformations and original identities
+
+The scientific sources remain immutable. `ORIGINAL_HASHES.json` identifies the exact original v2.3.1 and v2.4 protocol/contract pairs, their original binding records and the seven original stage manifests. The public protocol files are explicitly cleaned reproduction views. Their hashes are different from the original hashes and are published separately in `PROTOCOL_SHA256`.
+
+Public paths are relative to the repository root. Source import pins identify the relocated code. The original administrative authorization machinery is replaced by direct protocol/source integrity checks and a local predecessor chain; real labels remain behind those guards. The original numerical code is inherited from the predecessor's curated release. The appended stage's fitting, scoring, missing-value and statistical functions are checked against the original source syntax trees. `EQUIVALENCE.json` records the scope.
+
+The original v2.3.1 scientific field inventory is retained. The extension preserves its original budget, arm, comparator, family, randomization, inference, success-rule and missing-value settings. Operational paths and private process history are removed or described in public scientific terms. Exposure, prior reference knowledge, development choices, training-overlap uncertainty and interpretation limits are retained. The extension document retains the original rule and adds a separate rule; no reported outcome changes either specification.
+
+The command-line schema uses the published input identities after metadata cleaning. The summary file is hash-checked before metadata parsing and again before guarded outcome parsing. Synthetic matrix checks exercise the documented command-line entry points with generated inputs.
+
+Data transformations are restricted to string metadata: private source paths become public relative paths, internal administrative identifiers are removed, and administrative record fields are omitted. Numerical members of transformed NPZ files are copied byte-for-byte; unchanged files retain their exact bytes. The archive's `ORIGINAL_HASHES.json` maps each exported source file to its original and public SHA-256 and lists changed string-array names. This separates a metadata transformation from a new numerical result.
+
+Exported stage manifests are rebuilt to bind the cleaned protocol identity, each exported scientific file and the hashes of all preceding public manifests. The extension manifest binds the original six-stage public chain while remaining in a separate output root. Original stage-manifest hashes are retained separately; the public chain does not assert identity with the private manifests.
+
+Model weights, training logs, execution commands, completion markers and private operational records are excluded. Fine-tuning retains test and epoch-zero energy predictions and exact split-ID files; new training uses fresh completion records. The small fine-tuning AP tables are generated from archived point/per-draw values. Mechanism `metrics.csv` is the reported probe metrics table under a common filename. README tables are generated from released readings and judges, preserving round-trip decimal values.
+
+Exact original protocol and binding-record contents are not distributed in these trees because they contain private paths and operational identifiers. The archive supplies public scientific views and their original hash bindings. This limitation is explicit in its manifest and protocol-view records; the private originals are not silently substituted or modified.
+
+Archive parts use sorted paths, fixed tar ownership, permissions and timestamps, and explicitly hash-bound contiguous file chunks. File contents are reconstructed exactly. Every part is strictly smaller than 80,000,000 bytes. The inventory distinguishes restored file hashes, chunk hashes and part hashes.

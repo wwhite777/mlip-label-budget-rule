@@ -1,0 +1,178 @@
+[
+  {
+    "design": "P",
+    "family": "F4",
+    "contrast": "FT_mace_medium@1000",
+    "arm": "FT",
+    "checkpoint": "mace_medium",
+    "n": 1000,
+    "model": "full",
+    "estimate": -0.008265483052918077,
+    "estimand_reference": "R0_mace_medium",
+    "margin": 0.02,
+    "estimate_role": "matched-reference estimate",
+    "percentile_band_qualification": null,
+    "interval": [
+      -0.010383054369153216,
+      -0.006163283996072577
+    ],
+    "down_reference": "R0_mace_medium",
+    "down_estimate": -0.008265483052918077,
+    "down_interval": [
+      -0.010383054369153216,
+      -0.006163283996072577
+    ],
+    "p_up_components": {},
+    "p_up": 1.0,
+    "p_down": 0.0004997501249375312,
+    "p_up_holm": 1.0,
+    "p_down_holm": 0.001999000499750125,
+    "up_role": "confirmatory",
+    "family_role": "confirmatory",
+    "family_size": 4,
+    "reading": "DOES_NOT_EXCEED",
+    "synthetic_only": false,
+    "family_complete": true,
+    "draw_spread": {
+      "SD_M_r": 0.004504715311276666,
+      "reference_SD_M_r": 0.0,
+      "SD_difference_r": 0.004504715311276666,
+      "arm": "FT_full_mace_medium@1000",
+      "reference": "R0_mace_medium",
+      "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+    },
+    "inference_scope": "for the five frozen draws, conditional on fitted models"
+  },
+  {
+    "design": "P",
+    "family": "F4",
+    "contrast": "FT_orb@1000",
+    "arm": "FT",
+    "checkpoint": "orb",
+    "n": 1000,
+    "model": "full",
+    "estimate": -0.003520576744751147,
+    "estimand_reference": "R0_orb",
+    "margin": 0.02,
+    "estimate_role": "matched-reference estimate",
+    "percentile_band_qualification": null,
+    "interval": [
+      -0.003883657227965165,
+      -0.003181327306213633
+    ],
+    "down_reference": "R0_orb",
+    "down_estimate": -0.003520576744751147,
+    "down_interval": [
+      -0.003883657227965165,
+      -0.003181327306213633
+    ],
+    "p_up_components": {},
+    "p_up": 1.0,
+    "p_down": 0.0004997501249375312,
+    "p_up_holm": 1.0,
+    "p_down_holm": 0.001999000499750125,
+    "up_role": "confirmatory",
+    "family_role": "confirmatory",
+    "family_size": 4,
+    "reading": "DOES_NOT_EXCEED",
+    "synthetic_only": false,
+    "family_complete": true,
+    "draw_spread": {
+      "SD_M_r": 0.007875061448569125,
+      "reference_SD_M_r": 0.0,
+      "SD_difference_r": 0.007875061448569125,
+      "arm": "FT_full_orb@1000",
+      "reference": "R0_orb",
+      "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+    },
+    "inference_scope": "for the five frozen draws, conditional on fitted models"
+  },
+  {
+    "design": "P",
+    "family": "F4",
+    "contrast": "FT_mace_medium@3000",
+    "arm": "FT",
+    "checkpoint": "mace_medium",
+    "n": 3000,
+    "model": "full",
+    "estimate": 0.00949547560416042,
+    "estimand_reference": "R0_mace_medium",
+    "margin": 0.02,
+    "estimate_role": "matched-reference estimate",
+    "percentile_band_qualification": null,
+    "interval": [
+      0.006905651758001796,
+      0.01212533834435816
+    ],
+    "down_reference": "R0_mace_medium",
+    "down_estimate": 0.00949547560416042,
+    "down_interval": [
+      0.006905651758001796,
+      0.01212533834435816
+    ],
+    "p_up_components": {},
+    "p_up": 1.0,
+    "p_down": 0.0004997501249375312,
+    "p_up_holm": 1.0,
+    "p_down_holm": 0.001999000499750125,
+    "up_role": "confirmatory",
+    "family_role": "confirmatory",
+    "family_size": 4,
+    "reading": "DOES_NOT_EXCEED",
+    "synthetic_only": false,
+    "family_complete": true,
+    "draw_spread": {
+      "SD_M_r": 0.004444659489040218,
+      "reference_SD_M_r": 0.0,
+      "SD_difference_r": 0.004444659489040218,
+      "arm": "FT_full_mace_medium@3000",
+      "reference": "R0_mace_medium",
+      "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+    },
+    "inference_scope": "for the five frozen draws, conditional on fitted models"
+  },
+  {
+    "design": "P",
+    "family": "F4",
+    "contrast": "FT_orb@3000",
+    "arm": "FT",
+    "checkpoint": "orb",
+    "n": 3000,
+    "model": "full",
+    "estimate": 1.262276229208048e-06,
+    "estimand_reference": "R0_orb",
+    "margin": 0.02,
+    "estimate_role": "matched-reference estimate",
+    "percentile_band_qualification": null,
+    "interval": [
+      1.1173200737124578e-06,
+      1.4208222421152605e-06
+    ],
+    "down_reference": "R0_orb",
+    "down_estimate": 1.262276229208048e-06,
+    "down_interval": [
+      1.1173200737124578e-06,
+      1.4208222421152605e-06
+    ],
+    "p_up_components": {},
+    "p_up": 1.0,
+    "p_down": 0.0004997501249375312,
+    "p_up_holm": 1.0,
+    "p_down_holm": 0.001999000499750125,
+    "up_role": "confirmatory",
+    "family_role": "confirmatory",
+    "family_size": 4,
+    "reading": "DOES_NOT_EXCEED",
+    "synthetic_only": false,
+    "family_complete": true,
+    "draw_spread": {
+      "SD_M_r": 1.9079879705714e-08,
+      "reference_SD_M_r": 0.0,
+      "SD_difference_r": 1.9079879705714e-08,
+      "arm": "FT_full_orb@3000",
+      "reference": "R0_orb",
+      "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+    },
+    "inference_scope": "for the five frozen draws, conditional on fitted models"
+  }
+]

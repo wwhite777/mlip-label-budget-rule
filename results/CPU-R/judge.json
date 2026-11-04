@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "status": "SUCCESS",
+  "eligible": true,
+  "complete": true,
+  "low_budgets": {
+    "300": true,
+    "1000": true
+  },
+  "qualifying_high_contrasts": [
+    "A5fR_mace_medium@10000",
+    "A5fR_chgnet@10000",
+    "A5fR_sevenn@10000",
+    "A5fR_mattersim_5m@10000",
+    "A5fR_orb@10000"
+  ],
+  "synthetic_only": false,
+  "scientific_reading_authorized": true,
+  "rule": "separate extension only; original v2.3.1 rule and readings unchanged"
+}

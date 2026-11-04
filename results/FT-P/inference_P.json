@@ -1,0 +1,287 @@
+{
+  "design": "P",
+  "B": 2000,
+  "seed": 20261022,
+  "systems": 59319,
+  "points": {
+    "R0_mace_medium": 0.6114260943665141,
+    "R0_chgnet": 0.60805084185937,
+    "R0_sevenn": 0.6635514590936067,
+    "R0_mattersim_5m": 0.7650344582932962,
+    "R0_orb": 0.7699626212297794,
+    "FT_full_mace_medium@1000": 0.603160611313596,
+    "FT_full_orb@1000": 0.7664420444850283,
+    "FT_full_mace_medium@3000": 0.6209215699706745,
+    "FT_full_orb@3000": 0.7699638835060086,
+    "FT_full_mace_medium@10000": 0.6502776143269569,
+    "FT_full_orb@10000": 0.7699639025971642,
+    "R0_star": 0.7699626212297794
+  },
+  "M_r": {
+    "R0_mace_medium": [
+      0.6114260943665141,
+      0.6114260943665141,
+      0.6114260943665141,
+      0.6114260943665141,
+      0.6114260943665141
+    ],
+    "R0_chgnet": [
+      0.60805084185937,
+      0.60805084185937,
+      0.60805084185937,
+      0.60805084185937,
+      0.60805084185937
+    ],
+    "R0_sevenn": [
+      0.6635514590936067,
+      0.6635514590936067,
+      0.6635514590936067,
+      0.6635514590936067,
+      0.6635514590936067
+    ],
+    "R0_mattersim_5m": [
+      0.7650344582932962,
+      0.7650344582932962,
+      0.7650344582932962,
+      0.7650344582932962,
+      0.7650344582932962
+    ],
+    "R0_orb": [
+      0.7699626212297794,
+      0.7699626212297794,
+      0.7699626212297794,
+      0.7699626212297794,
+      0.7699626212297794
+    ],
+    "FT_full_mace_medium@1000": [
+      0.6006689163432437,
+      0.6010832003022982,
+      0.6092467791792631,
+      0.6064303232973812,
+      0.5983738374457938
+    ],
+    "FT_full_orb@1000": [
+      0.7699638927169885,
+      0.7699638668914597,
+      0.7699638870457817,
+      0.7699638694666597,
+      0.7523547063042513
+    ],
+    "FT_full_mace_medium@3000": [
+      0.6167380740139525,
+      0.6222022939963197,
+      0.6272458440666483,
+      0.6165623931226923,
+      0.6218592446537594
+    ],
+    "FT_full_orb@3000": [
+      0.7699639060441916,
+      0.7699638657132799,
+      0.7699638616376598,
+      0.7699638902242373,
+      0.7699638939106747
+    ],
+    "FT_full_mace_medium@10000": [
+      0.6502776143269569
+    ],
+    "FT_full_orb@10000": [
+      0.7699639025971642
+    ]
+  },
+  "replicate_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "deterministic_references": "same metric in each replicate",
+  "readings": [
+    {
+      "design": "P",
+      "family": "F4",
+      "contrast": "FT_mace_medium@1000",
+      "arm": "FT",
+      "checkpoint": "mace_medium",
+      "n": 1000,
+      "model": "full",
+      "estimate": -0.008265483052918077,
+      "estimand_reference": "R0_mace_medium",
+      "margin": 0.02,
+      "estimate_role": "matched-reference estimate",
+      "percentile_band_qualification": null,
+      "interval": [
+        -0.010383054369153216,
+        -0.006163283996072577
+      ],
+      "down_reference": "R0_mace_medium",
+      "down_estimate": -0.008265483052918077,
+      "down_interval": [
+        -0.010383054369153216,
+        -0.006163283996072577
+      ],
+      "p_up_components": {},
+      "p_up": 1.0,
+      "p_down": 0.0004997501249375312,
+      "p_up_holm": 1.0,
+      "p_down_holm": 0.001999000499750125,
+      "up_role": "confirmatory",
+      "family_role": "confirmatory",
+      "family_size": 4,
+      "reading": "DOES_NOT_EXCEED",
+      "synthetic_only": false,
+      "family_complete": true,
+      "draw_spread": {
+        "SD_M_r": 0.004504715311276666,
+        "reference_SD_M_r": 0.0,
+        "SD_difference_r": 0.004504715311276666,
+        "arm": "FT_full_mace_medium@1000",
+        "reference": "R0_mace_medium",
+        "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+      },
+      "inference_scope": "for the five frozen draws, conditional on fitted models"
+    },
+    {
+      "design": "P",
+      "family": "F4",
+      "contrast": "FT_orb@1000",
+      "arm": "FT",
+      "checkpoint": "orb",
+      "n": 1000,
+      "model": "full",
+      "estimate": -0.003520576744751147,
+      "estimand_reference": "R0_orb",
+      "margin": 0.02,
+      "estimate_role": "matched-reference estimate",
+      "percentile_band_qualification": null,
+      "interval": [
+        -0.003883657227965165,
+        -0.003181327306213633
+      ],
+      "down_reference": "R0_orb",
+      "down_estimate": -0.003520576744751147,
+      "down_interval": [
+        -0.003883657227965165,
+        -0.003181327306213633
+      ],
+      "p_up_components": {},
+      "p_up": 1.0,
+      "p_down": 0.0004997501249375312,
+      "p_up_holm": 1.0,
+      "p_down_holm": 0.001999000499750125,
+      "up_role": "confirmatory",
+      "family_role": "confirmatory",
+      "family_size": 4,
+      "reading": "DOES_NOT_EXCEED",
+      "synthetic_only": false,
+      "family_complete": true,
+      "draw_spread": {
+        "SD_M_r": 0.007875061448569125,
+        "reference_SD_M_r": 0.0,
+        "SD_difference_r": 0.007875061448569125,
+        "arm": "FT_full_orb@1000",
+        "reference": "R0_orb",
+        "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+      },
+      "inference_scope": "for the five frozen draws, conditional on fitted models"
+    },
+    {
+      "design": "P",
+      "family": "F4",
+      "contrast": "FT_mace_medium@3000",
+      "arm": "FT",
+      "checkpoint": "mace_medium",
+      "n": 3000,
+      "model": "full",
+      "estimate": 0.00949547560416042,
+      "estimand_reference": "R0_mace_medium",
+      "margin": 0.02,
+      "estimate_role": "matched-reference estimate",
+      "percentile_band_qualification": null,
+      "interval": [
+        0.006905651758001796,
+        0.01212533834435816
+      ],
+      "down_reference": "R0_mace_medium",
+      "down_estimate": 0.00949547560416042,
+      "down_interval": [
+        0.006905651758001796,
+        0.01212533834435816
+      ],
+      "p_up_components": {},
+      "p_up": 1.0,
+      "p_down": 0.0004997501249375312,
+      "p_up_holm": 1.0,
+      "p_down_holm": 0.001999000499750125,
+      "up_role": "confirmatory",
+      "family_role": "confirmatory",
+      "family_size": 4,
+      "reading": "DOES_NOT_EXCEED",
+      "synthetic_only": false,
+      "family_complete": true,
+      "draw_spread": {
+        "SD_M_r": 0.004444659489040218,
+        "reference_SD_M_r": 0.0,
+        "SD_difference_r": 0.004444659489040218,
+        "arm": "FT_full_mace_medium@3000",
+        "reference": "R0_mace_medium",
+        "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+      },
+      "inference_scope": "for the five frozen draws, conditional on fitted models"
+    },
+    {
+      "design": "P",
+      "family": "F4",
+      "contrast": "FT_orb@3000",
+      "arm": "FT",
+      "checkpoint": "orb",
+      "n": 3000,
+      "model": "full",
+      "estimate": 1.262276229208048e-06,
+      "estimand_reference": "R0_orb",
+      "margin": 0.02,
+      "estimate_role": "matched-reference estimate",
+      "percentile_band_qualification": null,
+      "interval": [
+        1.1173200737124578e-06,
+        1.4208222421152605e-06
+      ],
+      "down_reference": "R0_orb",
+      "down_estimate": 1.262276229208048e-06,
+      "down_interval": [
+        1.1173200737124578e-06,
+        1.4208222421152605e-06
+      ],
+      "p_up_components": {},
+      "p_up": 1.0,
+      "p_down": 0.0004997501249375312,
+      "p_up_holm": 1.0,
+      "p_down_holm": 0.001999000499750125,
+      "up_role": "confirmatory",
+      "family_role": "confirmatory",
+      "family_size": 4,
+      "reading": "DOES_NOT_EXCEED",
+      "synthetic_only": false,
+      "family_complete": true,
+      "draw_spread": {
+        "SD_M_r": 1.9079879705714e-08,
+        "reference_SD_M_r": 0.0,
+        "SD_difference_r": 1.9079879705714e-08,
+        "arm": "FT_full_orb@3000",
+        "reference": "R0_orb",
+        "definition": "sample SD across frozen draw M_r; fixed point-estimate winners"
+      },
+      "inference_scope": "for the five frozen draws, conditional on fitted models"
+    }
+  ],
+  "synthetic_only": false,
+  "family_completion": {
+    "F1": "INCOMPLETE",
+    "F2": "INCOMPLETE",
+    "F3": "INCOMPLETE",
+    "F4": "COMPLETE"
+  },
+  "bootstrap_workers": 12,
+  "bootstrap_seconds": 64.0821236865595,
+  "bootstrap_cpu_seconds": 756.941424022
+}

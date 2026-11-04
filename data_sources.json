@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "role": "summary",
+      "path": "cache/mbd/2023-12-13-wbm-summary_v64706751.csv.gz",
+      "sha256": "adbdd8b24086d4888195d8894c77f6d5fb29ce33bbb5d7d3898b4d79e964dc54",
+      "url": "https://ndownloader.figshare.com/files/64706751",
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "role": "initial_structures",
+      "path": "cache/mbd/2022-10-19-wbm-init-structs.json.bz2",
+      "sha256": "4cc43e87c1ddfe97edc7445f62ab14c11e1f261fba3a2709805ec1812f842b7d",
+      "url": "https://ndownloader.figshare.com/files/40344466",
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "role": "relaxed_structures_ft_targets",
+      "path": "cache/wbm/wbm_cse.json.bz2",
+      "sha256": "478f676e07c877109b638c2588a1dabf71f8872109a0d132fc99ad4d7bf351a6",
+      "url": "https://ndownloader.figshare.com/files/40344463",
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "role": "element_basis",
+      "path": "cache/mbd/2025-02-01-mp-energies.csv.gz",
+      "sha256": "f1d083a56cacb02cdcb556830f58216890f84503c6a19e1c53bf92939aaedb8e",
+      "url": "https://ndownloader.figshare.com/files/52080797",
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "role": "ft_elemental_references",
+      "path": "cache/reference/mbd_cache/mp/2023-02-07-mp-elemental-reference-entries.json.gz",
+      "sha256": "9fd6ef848a91c88840a0d1709b5856d0edb4af22095237e59db52f2acd6bbf79",
+      "url": "https://ndownloader.figshare.com/files/40387775",
+      "licence": "CC-BY-4.0"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpoint": "mace_medium",
+      "path": "checkpoints/mace_medium",
+      "sha256": "01bfe22100139f424713cf921144e5509cbe353d67aa9fa1be9c6e1e0ed35845",
+      "url": "https://github.com/ACEsuit/mace-foundations/releases/download/mace_mp_0/2023-12-03-mace-128-L1_epoch-199.model",
+      "licence": "MIT",
+      "licence_url": "https://github.com/ACEsuit/mace-foundations/blob/1ff8786eb/LICENSE"
+    },
+    {
+      "checkpoint": "chgnet",
+      "path": "checkpoints/chgnet",
+      "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+      "url": "https://github.com/CederGroupHub/chgnet/raw/refs/heads/main/chgnet/pretrained/0.3.0/chgnet_0.3.0_e29f68s314m37.pth.tar",
+      "licence": "BSD-3-Clause",
+      "licence_url": "https://github.com/CederGroupHub/chgnet/blob/d55f185199f/LICENSE"
+    },
+    {
+      "checkpoint": "sevenn",
+      "path": "checkpoints/sevenn",
+      "sha256": "7052cb42b7b3be42b40b97fa0d21077a48c54b5548948fc4dcf346629f813c36",
+      "url": "https://raw.githubusercontent.com/MDIL-SNU/SevenNet/dff008ac9c53d3/sevenn/pretrained_potentials/SevenNet_0__11Jul2024/checkpoint_sevennet_0.pth",
+      "licence": "GPL-3.0",
+      "licence_url": "https://github.com/MDIL-SNU/SevenNet/blob/8ce2c9d4/LICENSE"
+    },
+    {
+      "checkpoint": "mattersim_5m",
+      "path": "checkpoints/mattersim_5m",
+      "sha256": "e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5",
+      "url": "https://github.com/microsoft/mattersim/raw/refs/heads/main/pretrained_models/mattersim-v1.0.0-5M.pth",
+      "licence": "MIT",
+      "licence_url": "https://github.com/microsoft/mattersim/blob/d0a52e64fc/MODEL_CARD.md"
+    },
+    {
+      "checkpoint": "orb",
+      "path": "checkpoints/orb",
+      "sha256": "bd1840d1488f3cd01d213970d9618a63f971590ad45e5e83bf5404d4b95d216a",
+      "url": "https://orbitalmaterials-public-models.s3.us-west-1.amazonaws.com/forcefields/orb-v3/orb-v3-conservative-inf-mpa-20250404.ckpt",
+      "licence": "Apache-2.0",
+      "licence_url": "https://github.com/orbital-materials/orb-models/blob/3e9580809/LICENSE"
+    }
+  ],
+  "licence_evidence": "Recorded upstream model catalogue and existing data archive attribution; no online refresh performed."
+}

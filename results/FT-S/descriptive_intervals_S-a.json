@@ -1,0 +1,192 @@
+[
+  {
+    "method": "R0_mace_medium",
+    "AP": 0.5893817461955922,
+    "AP_interval": [
+      0.5803676990439555,
+      0.5986678505267965
+    ],
+    "AUROC_interval": [
+      0.8413969086344576,
+      0.8506867337995081
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_chgnet",
+    "AP": 0.5899028232838561,
+    "AP_interval": [
+      0.5811738343310245,
+      0.5985783134038438
+    ],
+    "AUROC_interval": [
+      0.8321284630375868,
+      0.8416086726674415
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_sevenn",
+    "AP": 0.6437487980440502,
+    "AP_interval": [
+      0.6356434311199672,
+      0.6519898632768119
+    ],
+    "AUROC_interval": [
+      0.8511768515686842,
+      0.8603620202962868
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_mattersim_5m",
+    "AP": 0.7689817829124876,
+    "AP_interval": [
+      0.7627044198326385,
+      0.7752340177743013
+    ],
+    "AUROC_interval": [
+      0.9018650909305986,
+      0.9079515659305293
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "R0_orb",
+    "AP": 0.7685215035602344,
+    "AP_interval": [
+      0.762410993385616,
+      0.77464565105469
+    ],
+    "AUROC_interval": [
+      0.9021050183632898,
+      0.9081543603480045
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@1000",
+    "AP": 0.5838877167152852,
+    "AP_interval": [
+      0.5751370103674857,
+      0.5929250652530913
+    ],
+    "AUROC_interval": [
+      0.8456054335485164,
+      0.8538309157654166
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@1000",
+    "reference": "R0_mace_medium",
+    "contrast": "matched_reference",
+    "AP_difference": -0.005494029480307083,
+    "AP_interval": [
+      -0.007610303780113986,
+      -0.003312153973885729
+    ],
+    "AUROC_interval": [
+      0.0026754211751859767,
+      0.004620454698919407
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@1000",
+    "AP": 0.7685228163026215,
+    "AP_interval": [
+      0.7624124617207818,
+      0.77464714541794
+    ],
+    "AUROC_interval": [
+      0.9021050302471717,
+      0.9081544012053921
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@1000",
+    "reference": "R0_orb",
+    "contrast": "matched_reference",
+    "AP_difference": 1.312742387127308e-06,
+    "AP_interval": [
+      9.959958978456029e-07,
+      1.6502385670413843e-06
+    ],
+    "AUROC_interval": [
+      -4.118474758452173e-08,
+      5.016252022094213e-08
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@3000",
+    "AP": 0.5994289637066605,
+    "AP_interval": [
+      0.5908351106105453,
+      0.6082050736664915
+    ],
+    "AUROC_interval": [
+      0.8507860780022092,
+      0.8585826667258215
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_mace_medium@3000",
+    "reference": "R0_mace_medium",
+    "contrast": "matched_reference",
+    "AP_difference": 0.010047217511068296,
+    "AP_interval": [
+      0.007430605034646537,
+      0.0125434687596235
+    ],
+    "AUROC_interval": [
+      0.007176165875762109,
+      0.009915254443238168
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@3000",
+    "AP": 0.7685227820951634,
+    "AP_interval": [
+      0.7624124455349812,
+      0.7746471061477093
+    ],
+    "AUROC_interval": [
+      0.9021050384138838,
+      0.9081544006609483
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  },
+  {
+    "method": "FT_full_orb@3000",
+    "reference": "R0_orb",
+    "contrast": "matched_reference",
+    "AP_difference": 1.2785349290389547e-06,
+    "AP_interval": [
+      9.551221803516529e-07,
+      1.6093205316480838e-06
+    ],
+    "AUROC_interval": [
+      -3.9552426178701697e-08,
+      5.0903246173739085e-08
+    ],
+    "undefined_AUROC_draws": 0,
+    "readings": false
+  }
+]

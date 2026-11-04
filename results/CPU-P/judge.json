@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "status": "SUCCESS",
+  "low_budgets": {
+    "300": true,
+    "1000": true
+  },
+  "qualifying_high_contrasts": [
+    "A5f_mace_medium@10000",
+    "A5f_chgnet@10000",
+    "A5f_sevenn@10000",
+    "A5f_mattersim_5m@10000",
+    "A5f_orb@10000"
+  ],
+  "eligible": true,
+  "complete": true,
+  "C05_confirmatory": true,
+  "synthetic_only": false,
+  "scientific_reading_authorized": true,
+  "completion_scope": "design-P F1/F2 only; F3/F4/S/mechanism reported separately"
+}

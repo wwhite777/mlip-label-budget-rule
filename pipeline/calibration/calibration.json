@@ -1,0 +1,1238 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "project_data_opened": false,
+  "outer_datasets_per_fixture": 1000,
+  "B": 2000,
+  "alpha": 0.05,
+  "weighted_AP_shortcut_max_error": 1.1102230246251565e-16,
+  "fixtures": [
+    {
+      "fixture": "tied_references",
+      "seed": 822204,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probabilities": [
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.04
+      ],
+      "reference_common_mixture": 0.0,
+      "true_oracle_difference": 0.02,
+      "true_fixed_ORB_difference": 0.02,
+      "contender_tie": false,
+      "null": "down: d>=m; up: d<=m (boundary)",
+      "rates": {
+        "old_raw_down": 0.796,
+        "old_Holm_down": 0.588,
+        "new_raw_down": 0.056,
+        "new_Holm_down": 0.021,
+        "F1_raw_IUT_up": 0.0,
+        "F1_Holm_IUT_up": 0.0
+      },
+      "rejections": {
+        "old_raw_down": 796,
+        "old_Holm_down": 588,
+        "new_raw_down": 56,
+        "new_Holm_down": 21,
+        "F1_raw_IUT_up": 0,
+        "F1_Holm_IUT_up": 0
+      },
+      "identical_contrasts": true,
+      "witness": {
+        "reference_error_counts": [
+          43,
+          53,
+          46,
+          35,
+          30
+        ],
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010499999999999954,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.015000000000000013,
+            "down_interval": [
+              0.010499999999999954,
+              0.019499999999999962
+            ],
+            "p_up_components": {},
+            "p_up": 0.992503748125937,
+            "p_down": 0.04547726136931534,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.136431784107946,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010499999999999954,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.015000000000000013,
+            "down_interval": [
+              0.010499999999999954,
+              0.019499999999999962
+            ],
+            "p_up_components": {},
+            "p_up": 0.992503748125937,
+            "p_down": 0.04547726136931534,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.136431784107946,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010499999999999954,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.015000000000000013,
+            "down_interval": [
+              0.010499999999999954,
+              0.019499999999999962
+            ],
+            "p_up_components": {},
+            "p_up": 0.992503748125937,
+            "p_down": 0.04547726136931534,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.136431784107946,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "production_F1": {
+          "design": "P",
+          "family": "F1",
+          "contrast": "A5f_mace_medium@10000",
+          "arm": "A5f",
+          "checkpoint": "mace_medium",
+          "n": 10000,
+          "model": "hist_gbm",
+          "estimate": 0.015000000000000013,
+          "estimand_reference": "R0_star",
+          "margin": 0.02,
+          "estimate_role": "descriptive oracle estimate",
+          "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+          "interval": [
+            0.010499999999999954,
+            0.018000000000000016
+          ],
+          "down_reference": "R0_orb",
+          "down_estimate": 0.015000000000000013,
+          "down_interval": [
+            0.010499999999999954,
+            0.019499999999999962
+          ],
+          "p_up_components": {
+            "R0_mace_medium": 0.29485257371314344,
+            "R0_chgnet": 0.026486756621689155,
+            "R0_sevenn": 0.1629185407296352,
+            "R0_mattersim_5m": 0.7766116941529235,
+            "R0_orb": 0.9550224887556222
+          },
+          "p_up": 0.9550224887556222,
+          "p_down": 0.04547726136931534,
+          "p_up_holm": 1.0,
+          "p_down_holm": 0.04547726136931534,
+          "up_role": "confirmatory",
+          "family_role": "confirmatory, exposure-informed",
+          "family_size": 6,
+          "reading": "DOES_NOT_EXCEED",
+          "synthetic_only": true,
+          "family_complete": true,
+          "draw_spread": {
+            "SD_M_r": null,
+            "reference_SD_M_r": null,
+            "SD_difference_r": null,
+            "definition": "not supplied (scalar synthetic fixture only)"
+          },
+          "inference_scope": "for the five frozen draws, conditional on fitted models"
+        }
+      }
+    },
+    {
+      "fixture": "correlated_references",
+      "seed": 822205,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probabilities": [
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.04
+      ],
+      "reference_common_mixture": 0.75,
+      "true_oracle_difference": 0.02,
+      "true_fixed_ORB_difference": 0.02,
+      "contender_tie": false,
+      "null": "down: d>=m; up: d<=m (boundary)",
+      "rates": {
+        "old_raw_down": 0.213,
+        "old_Holm_down": 0.105,
+        "new_raw_down": 0.067,
+        "new_Holm_down": 0.028,
+        "F1_raw_IUT_up": 0.004,
+        "F1_Holm_IUT_up": 0.0
+      },
+      "rejections": {
+        "old_raw_down": 213,
+        "old_Holm_down": 105,
+        "new_raw_down": 67,
+        "new_Holm_down": 28,
+        "F1_raw_IUT_up": 4,
+        "F1_Holm_IUT_up": 0
+      },
+      "identical_contrasts": true,
+      "witness": {
+        "reference_error_counts": [
+          30,
+          32,
+          36,
+          30,
+          38
+        ],
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010000000000000009,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.019000000000000017,
+            "down_interval": [
+              0.014499999999999957,
+              0.02400000000000002
+            ],
+            "p_up_components": {},
+            "p_up": 0.9900049975012494,
+            "p_down": 0.3828085957021489,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010000000000000009,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.019000000000000017,
+            "down_interval": [
+              0.014499999999999957,
+              0.02400000000000002
+            ],
+            "p_up_components": {},
+            "p_up": 0.9900049975012494,
+            "p_down": 0.3828085957021489,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": 0.015000000000000013,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.010000000000000009,
+              0.018000000000000016
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.019000000000000017,
+            "down_interval": [
+              0.014499999999999957,
+              0.02400000000000002
+            ],
+            "p_up_components": {},
+            "p_up": 0.9900049975012494,
+            "p_down": 0.3828085957021489,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "production_F1": {
+          "design": "P",
+          "family": "F1",
+          "contrast": "A5f_mace_medium@10000",
+          "arm": "A5f",
+          "checkpoint": "mace_medium",
+          "n": 10000,
+          "model": "hist_gbm",
+          "estimate": 0.015000000000000013,
+          "estimand_reference": "R0_star",
+          "margin": 0.02,
+          "estimate_role": "descriptive oracle estimate",
+          "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+          "interval": [
+            0.010000000000000009,
+            0.018000000000000016
+          ],
+          "down_reference": "R0_orb",
+          "down_estimate": 0.019000000000000017,
+          "down_interval": [
+            0.014499999999999957,
+            0.02400000000000002
+          ],
+          "p_up_components": {
+            "R0_mace_medium": 0.967016491754123,
+            "R0_chgnet": 0.9270364817591205,
+            "R0_sevenn": 0.735632183908046,
+            "R0_mattersim_5m": 0.9645177411294353,
+            "R0_orb": 0.6176911544227887
+          },
+          "p_up": 0.967016491754123,
+          "p_down": 0.3828085957021489,
+          "p_up_holm": 1.0,
+          "p_down_holm": 0.3828085957021489,
+          "up_role": "confirmatory",
+          "family_role": "confirmatory, exposure-informed",
+          "family_size": 6,
+          "reading": "INCONCLUSIVE",
+          "synthetic_only": true,
+          "family_complete": true,
+          "draw_spread": {
+            "SD_M_r": null,
+            "reference_SD_M_r": null,
+            "SD_difference_r": null,
+            "definition": "not supplied (scalar synthetic fixture only)"
+          },
+          "inference_scope": "for the five frozen draws, conditional on fitted models"
+        }
+      }
+    },
+    {
+      "fixture": "tied_contenders",
+      "seed": 822206,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probabilities": [
+        0.12,
+        0.1,
+        0.08,
+        0.06,
+        0.04
+      ],
+      "reference_common_mixture": 0.0,
+      "true_oracle_difference": 0.02,
+      "true_fixed_ORB_difference": 0.02,
+      "contender_tie": true,
+      "null": "down: d>=m; up: d<=m (boundary)",
+      "rates": {
+        "old_raw_down": 0.077,
+        "old_Holm_down": 0.031,
+        "new_raw_down": 0.076,
+        "new_Holm_down": 0.031,
+        "F1_raw_IUT_up": 0.033,
+        "F1_Holm_IUT_up": 0.005
+      },
+      "rejections": {
+        "old_raw_down": 77,
+        "old_Holm_down": 31,
+        "new_raw_down": 76,
+        "new_Holm_down": 31,
+        "F1_raw_IUT_up": 33,
+        "F1_Holm_IUT_up": 5
+      },
+      "identical_contrasts": true,
+      "witness": {
+        "reference_error_counts": [
+          117,
+          100,
+          75,
+          63,
+          41
+        ],
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.020499999999999963,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020499999999999963,
+            "down_interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "p_up_components": {},
+            "p_up": 0.42828585707146427,
+            "p_down": 0.5722138930534733,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": 0.020499999999999963,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020499999999999963,
+            "down_interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "p_up_components": {},
+            "p_up": 0.42828585707146427,
+            "p_down": 0.5722138930534733,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": 0.020499999999999963,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020499999999999963,
+            "down_interval": [
+              0.015499999999999958,
+              0.025499999999999967
+            ],
+            "p_up_components": {},
+            "p_up": 0.42828585707146427,
+            "p_down": 0.5722138930534733,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "production_F1": {
+          "design": "P",
+          "family": "F1",
+          "contrast": "A5f_mace_medium@10000",
+          "arm": "A5f",
+          "checkpoint": "mace_medium",
+          "n": 10000,
+          "model": "hist_gbm",
+          "estimate": 0.020499999999999963,
+          "estimand_reference": "R0_star",
+          "margin": 0.02,
+          "estimate_role": "descriptive oracle estimate",
+          "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+          "interval": [
+            0.015499999999999958,
+            0.025499999999999967
+          ],
+          "down_reference": "R0_orb",
+          "down_estimate": 0.020499999999999963,
+          "down_interval": [
+            0.015499999999999958,
+            0.025499999999999967
+          ],
+          "p_up_components": {
+            "R0_mace_medium": 0.0004997501249375312,
+            "R0_chgnet": 0.0004997501249375312,
+            "R0_sevenn": 0.0004997501249375312,
+            "R0_mattersim_5m": 0.0009995002498750624,
+            "R0_orb": 0.42828585707146427
+          },
+          "p_up": 0.42828585707146427,
+          "p_down": 0.5722138930534733,
+          "p_up_holm": 1.0,
+          "p_down_holm": 1.0,
+          "up_role": "confirmatory",
+          "family_role": "confirmatory, exposure-informed",
+          "family_size": 6,
+          "reading": "INCONCLUSIVE",
+          "synthetic_only": true,
+          "family_complete": true,
+          "draw_spread": {
+            "SD_M_r": null,
+            "reference_SD_M_r": null,
+            "SD_difference_r": null,
+            "definition": "not supplied (scalar synthetic fixture only)"
+          },
+          "inference_scope": "for the five frozen draws, conditional on fitted models"
+        }
+      }
+    },
+    {
+      "fixture": "regular_separated",
+      "seed": 822207,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probabilities": [
+        0.12,
+        0.1,
+        0.08,
+        0.06,
+        0.04
+      ],
+      "reference_common_mixture": 0.0,
+      "true_oracle_difference": 0.02,
+      "true_fixed_ORB_difference": 0.02,
+      "contender_tie": false,
+      "null": "down: d>=m; up: d<=m (boundary)",
+      "rates": {
+        "old_raw_down": 0.062,
+        "old_Holm_down": 0.021,
+        "new_raw_down": 0.061,
+        "new_Holm_down": 0.02,
+        "F1_raw_IUT_up": 0.043,
+        "F1_Holm_IUT_up": 0.005
+      },
+      "rejections": {
+        "old_raw_down": 62,
+        "old_Holm_down": 21,
+        "new_raw_down": 61,
+        "new_Holm_down": 20,
+        "F1_raw_IUT_up": 43,
+        "F1_Holm_IUT_up": 5
+      },
+      "identical_contrasts": true,
+      "witness": {
+        "reference_error_counts": [
+          131,
+          107,
+          74,
+          65,
+          40
+        ],
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.020000000000000018,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020000000000000018,
+            "down_interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "p_up_components": {},
+            "p_up": 0.4927536231884058,
+            "p_down": 0.5077461269365318,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": 0.020000000000000018,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020000000000000018,
+            "down_interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "p_up_components": {},
+            "p_up": 0.4927536231884058,
+            "p_down": 0.5077461269365318,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": 0.020000000000000018,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.020000000000000018,
+            "down_interval": [
+              0.015000000000000013,
+              0.025000000000000022
+            ],
+            "p_up_components": {},
+            "p_up": 0.4927536231884058,
+            "p_down": 0.5077461269365318,
+            "p_up_holm": 1.0,
+            "p_down_holm": 1.0,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "production_F1": {
+          "design": "P",
+          "family": "F1",
+          "contrast": "A5f_mace_medium@10000",
+          "arm": "A5f",
+          "checkpoint": "mace_medium",
+          "n": 10000,
+          "model": "hist_gbm",
+          "estimate": 0.020000000000000018,
+          "estimand_reference": "R0_star",
+          "margin": 0.02,
+          "estimate_role": "descriptive oracle estimate",
+          "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+          "interval": [
+            0.015000000000000013,
+            0.025000000000000022
+          ],
+          "down_reference": "R0_orb",
+          "down_estimate": 0.020000000000000018,
+          "down_interval": [
+            0.015000000000000013,
+            0.025000000000000022
+          ],
+          "p_up_components": {
+            "R0_mace_medium": 0.0004997501249375312,
+            "R0_chgnet": 0.0004997501249375312,
+            "R0_sevenn": 0.0004997501249375312,
+            "R0_mattersim_5m": 0.0009995002498750624,
+            "R0_orb": 0.4927536231884058
+          },
+          "p_up": 0.4927536231884058,
+          "p_down": 0.5077461269365318,
+          "p_up_holm": 1.0,
+          "p_down_holm": 0.5077461269365318,
+          "up_role": "confirmatory",
+          "family_role": "confirmatory, exposure-informed",
+          "family_size": 6,
+          "reading": "INCONCLUSIVE",
+          "synthetic_only": true,
+          "family_complete": true,
+          "draw_spread": {
+            "SD_M_r": null,
+            "reference_SD_M_r": null,
+            "SD_difference_r": null,
+            "definition": "not supplied (scalar synthetic fixture only)"
+          },
+          "inference_scope": "for the five frozen draws, conditional on fitted models"
+        }
+      }
+    },
+    {
+      "fixture": "single_boundary_null",
+      "seed": 822210,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probability": 0.04,
+      "contender_error_probability": 0.0,
+      "true_fixed_ORB_difference": 0.02,
+      "identical_contrasts": false,
+      "rates": {
+        "new_raw_down": 0.069,
+        "new_Holm_down": 0.069
+      },
+      "witness": {
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.019499999999999962,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.014499999999999957,
+              0.024524999999999946
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.019499999999999962,
+            "down_interval": [
+              0.014499999999999957,
+              0.024524999999999946
+            ],
+            "p_up_components": {},
+            "p_up": 0.5397301349325337,
+            "p_down": 0.4607696151924038,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.4607696151924038,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "INCONCLUSIVE",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": -0.08050000000000002,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              -0.08550000000000002,
+              -0.07547500000000003
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": -0.08050000000000002,
+            "down_interval": [
+              -0.08550000000000002,
+              -0.07547500000000003
+            ],
+            "p_up_components": {},
+            "p_up": 1.0,
+            "p_down": 0.0004997501249375312,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.0014992503748125937,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "DOES_NOT_EXCEED",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": -0.08050000000000002,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              -0.08550000000000002,
+              -0.07547500000000003
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": -0.08050000000000002,
+            "down_interval": [
+              -0.08550000000000002,
+              -0.07547500000000003
+            ],
+            "p_up_components": {},
+            "p_up": 1.0,
+            "p_down": 0.0004997501249375312,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.0014992503748125937,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "DOES_NOT_EXCEED",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "contender_bootstrap_SD": 0.0,
+        "weighted_AP_shortcut_max_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "fixture": "noisy_contender_boundary",
+      "seed": 822211,
+      "outer_datasets": 1000,
+      "B": 2000,
+      "clusters": 1000,
+      "reference_error_probability": 0.08,
+      "contender_error_probability": 0.04,
+      "true_fixed_ORB_difference": 0.02,
+      "identical_contrasts": false,
+      "rates": {
+        "new_raw_down": 0.046,
+        "new_Holm_down": 0.046
+      },
+      "witness": {
+        "production_F2": [
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@300",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 300,
+            "model": "maximum",
+            "estimate": 0.010000000000000009,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              0.0030000000000000027,
+              0.01749999999999996
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": 0.010000000000000009,
+            "down_interval": [
+              0.0030000000000000027,
+              0.01749999999999996
+            ],
+            "p_up_components": {},
+            "p_up": 0.9860069965017492,
+            "p_down": 0.014492753623188406,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.014492753623188406,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "DOES_NOT_EXCEED",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@1000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 1000,
+            "model": "maximum",
+            "estimate": -0.07199999999999995,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              -0.07750000000000001,
+              -0.06599999999999995
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": -0.07199999999999995,
+            "down_interval": [
+              -0.07750000000000001,
+              -0.06599999999999995
+            ],
+            "p_up_components": {},
+            "p_up": 1.0,
+            "p_down": 0.0004997501249375312,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.0014992503748125937,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "DOES_NOT_EXCEED",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          },
+          {
+            "design": "P",
+            "family": "F2",
+            "contrast": "max@3000",
+            "arm": "MAX",
+            "checkpoint": "ensemble",
+            "n": 3000,
+            "model": "maximum",
+            "estimate": -0.07199999999999995,
+            "estimand_reference": "R0_star",
+            "margin": 0.02,
+            "estimate_role": "descriptive oracle estimate",
+            "percentile_band_qualification": "Oracle and contender-maximum percentile bands are descriptive, nominal percentile summaries; their coverage can be poor at ties and they must not be presented as calibrated 90 % confidence intervals.",
+            "interval": [
+              -0.07750000000000001,
+              -0.06599999999999995
+            ],
+            "down_reference": "R0_orb",
+            "down_estimate": -0.07199999999999995,
+            "down_interval": [
+              -0.07750000000000001,
+              -0.06599999999999995
+            ],
+            "p_up_components": {},
+            "p_up": 1.0,
+            "p_down": 0.0004997501249375312,
+            "p_up_holm": 1.0,
+            "p_down_holm": 0.0014992503748125937,
+            "up_role": "descriptive only",
+            "family_role": "confirmatory, exposure-informed",
+            "family_size": 3,
+            "reading": "DOES_NOT_EXCEED",
+            "synthetic_only": true,
+            "family_complete": true,
+            "draw_spread": {
+              "SD_M_r": null,
+              "reference_SD_M_r": null,
+              "SD_difference_r": null,
+              "definition": "not supplied (scalar synthetic fixture only)"
+            },
+            "inference_scope": "for the five frozen draws, conditional on fitted models"
+          }
+        ],
+        "contender_bootstrap_SD": 0.0029098429510886017,
+        "weighted_AP_shortcut_max_error": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "regular_alternative_power": {
+    "down": 1.0,
+    "up": 0.982
+  },
+  "acceptance_scope": "regression check: reproduced rates +/- four Monte Carlo SE plus one dataset; no size-control claim",
+  "regression_rates": {
+    "tied_references": [
+      0.796,
+      0.588,
+      0.056,
+      0.021,
+      0.0,
+      0.0
+    ],
+    "correlated_references": [
+      0.213,
+      0.105,
+      0.067,
+      0.028,
+      0.004,
+      0.0
+    ],
+    "tied_contenders": [
+      0.077,
+      0.031,
+      0.076,
+      0.031,
+      0.033,
+      0.005
+    ],
+    "regular_separated": [
+      0.062,
+      0.021,
+      0.061,
+      0.02,
+      0.043,
+      0.005
+    ],
+    "single_boundary_null": [
+      0.069,
+      0.069
+    ],
+    "noisy_contender_boundary": [
+      0.046,
+      0.046
+    ]
+  },
+  "seconds": 79.56365149654448,
+  "qualification": "Monte Carlo validation of the paired empirical cluster bootstrap on specified synthetic fixtures; not a finite-sample proof or a forecast for CONFIRM. No refitting variance included."
+}

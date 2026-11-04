@@ -1,0 +1,195 @@
+{
+  "single_point": {
+    "part": "CONFIRM",
+    "structures": 172689,
+    "systems": 59319,
+    "fold_sizes": [
+      34538,
+      34538,
+      34538,
+      34538,
+      34537
+    ],
+    "checkpoints": {
+      "mace_medium": {
+        "rows": 172689,
+        "feature_shape": [
+          172689,
+          256
+        ],
+        "feature_nonfinite": 0,
+        "reference_nonfinite": 0,
+        "missing_ids": 0,
+        "source_feature_rows": 256963,
+        "source_reference_rows": 256963,
+        "weights_sha256": "01bfe22100139f424713cf921144e5509cbe353d67aa9fa1be9c6e1e0ed35845",
+        "pooled_tensor": "MACE-MP-0 medium (2023-12-03 L1 128ch): calc.get_descriptors(invariants_only=True, all layers) = 0e channels of both layers concatenated; invariant"
+      },
+      "chgnet": {
+        "rows": 172689,
+        "feature_shape": [
+          172689,
+          64
+        ],
+        "feature_nonfinite": 0,
+        "reference_nonfinite": 0,
+        "missing_ids": 0,
+        "source_feature_rows": 256963,
+        "source_reference_rows": 256963,
+        "weights_sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+        "pooled_tensor": "CHGNet 0.3.0: atom_feas after the last atom-conv layer and readout LayerNorm (crystal_fea is their SUM when mlp_first; divided by n_atoms -> mean); invariant"
+      },
+      "sevenn": {
+        "rows": 172689,
+        "feature_shape": [
+          172689,
+          128
+        ],
+        "feature_nonfinite": 0,
+        "reference_nonfinite": 0,
+        "missing_ids": 0,
+        "source_feature_rows": 256963,
+        "source_reference_rows": 256963,
+        "weights_sha256": "7052cb42b7b3be42b40b97fa0d21077a48c54b5548948fc4dcf346629f813c36",
+        "pooled_tensor": "SevenNet-0 (11Jul2024): data['x'] after 4_equivariant_gate (irreps 128x0e, model truncated before reduce_input_to_hidden); invariant"
+      },
+      "mattersim_5m": {
+        "rows": 172689,
+        "feature_shape": [
+          172689,
+          256
+        ],
+        "feature_nonfinite": 0,
+        "reference_nonfinite": 0,
+        "missing_ids": 0,
+        "source_feature_rows": 256963,
+        "source_reference_rows": 256963,
+        "weights_sha256": "e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5",
+        "pooled_tensor": "MatterSim-v1.0.0-5M (M3GNet): atom_attr after the last graph_conv = input to model.final (forward hook); invariant"
+      },
+      "orb": {
+        "rows": 172689,
+        "feature_shape": [
+          172689,
+          256
+        ],
+        "feature_nonfinite": 0,
+        "reference_nonfinite": 0,
+        "missing_ids": 0,
+        "source_feature_rows": 256963,
+        "source_reference_rows": 256963,
+        "weights_sha256": "bd1840d1488f3cd01d213970d9618a63f971590ad45e5e83bf5404d4b95d216a",
+        "pooled_tensor": "ORB v3 conservative-inf-mpa (float32-highest): MoleculeGNS out['node_features'] after the last message-passing step (latent 256); not invariant by construction (SH edge features; v3 trained with rotational-equivariance regularisation)"
+      }
+    },
+    "common_h_max_deviations": {
+      "mace_medium": 0.0,
+      "chgnet": 1.7763568394002505e-15,
+      "sevenn": 8.881784197001252e-16,
+      "mattersim_5m": 1.000000000139778e-06,
+      "orb": 1.7763568394002505e-15
+    },
+    "labels_opened": false,
+    "csv_column_trace": [
+      {
+        "path": "result/splits/partition_v1/partition.csv.gz",
+        "columns": [
+          "material_id",
+          "part",
+          "chemsys"
+        ]
+      },
+      {
+        "path": "cache/mbd/2023-12-13-wbm-summary_v64706751.csv.gz",
+        "columns": [
+          "material_id",
+          "formula",
+          "unique_prototype"
+        ]
+      },
+      {
+        "path": "result/splits/partition_v1/confirm/splits_chemsys_seed0.csv.gz",
+        "columns": [
+          "material_id",
+          "chemsys",
+          "fold"
+        ]
+      },
+      {
+        "path": "cache/mbd/2025-02-01-mp-energies.csv.gz",
+        "columns": [
+          "formula"
+        ]
+      },
+      {
+        "path": "result/reference/zero_label_sp_mace_medium_initial.csv.gz",
+        "columns": [
+          "material_id",
+          "e_form_pred_sp",
+          "e_hull_pred_sp"
+        ]
+      },
+      {
+        "path": "result/reference/zero_label_sp_chgnet_initial_nomp2020.csv.gz",
+        "columns": [
+          "material_id",
+          "e_form_pred_sp",
+          "e_hull_pred_sp"
+        ]
+      },
+      {
+        "path": "result/reference/zero_label_sp_sevenn_initial.csv.gz",
+        "columns": [
+          "material_id",
+          "e_form_pred_sp",
+          "e_hull_pred_sp"
+        ]
+      },
+      {
+        "path": "result/reference/zero_label_sp_mattersim_5m_initial.csv.gz",
+        "columns": [
+          "material_id",
+          "e_form_pred_sp",
+          "e_hull_pred_sp"
+        ]
+      },
+      {
+        "path": "result/reference/zero_label_sp_orb_initial.csv.gz",
+        "columns": [
+          "material_id",
+          "e_form_pred_sp",
+          "e_hull_pred_sp"
+        ]
+      }
+    ]
+  },
+  "relaxed": {
+    "mace_medium": {
+      "rows": 172689,
+      "missing": 33,
+      "sha256": "f6700222ea0e55cc4ddf63f68cf5924c4ea59486e917545bddf8917504f12aa4"
+    },
+    "chgnet": {
+      "rows": 172689,
+      "missing": 0,
+      "sha256": "4c238010d09b66700caaaf3cb78d8eaf28dd0443331ad6fa3867b19a9025e7c5"
+    },
+    "sevenn": {
+      "rows": 172689,
+      "missing": 0,
+      "sha256": "c04b4115b96b0bd1202ebee86b2796bddd9185636e86de68397d895c6bb3f3de"
+    },
+    "mattersim_5m": {
+      "rows": 172689,
+      "missing": 0,
+      "sha256": "bd32d7b8985ee6b2159191b222ca25852eb520a749d67ea1a492a501706772e2"
+    },
+    "orb": {
+      "rows": 172689,
+      "missing": 0,
+      "sha256": "2992356a25115fdc521c04106e2767b2d1d1152d7a2e74f982ff417ad94353e7"
+    }
+  },
+  "reduction": null,
+  "real_labels_opened": true
+}

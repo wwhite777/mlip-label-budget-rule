@@ -1,0 +1,302 @@
+{
+  "imports": {
+    "arms": {
+      "path": "src/arms/run_arms.py",
+      "sha256": "8ce2eb82332b03339f92bb061f5108fadcd70681713f0a8dbc4868583203fdac",
+      "symbols": [
+        "unit",
+        "binary_select",
+        "reg_select",
+        "assemble",
+        "baselines",
+        "noise_unit"
+      ]
+    },
+    "arm_inputs": {
+      "path": "src/arms/pilot_arms.py",
+      "sha256": "b340d8ef51c0c394fd97dc9a73318198abcaf868a2fb95b2e9c46448a86b0704",
+      "symbols": [
+        "CHECKPOINTS",
+        "perturb_features"
+      ]
+    },
+    "pilot_guard": {
+      "path": "src/pilot/pilot_data.py",
+      "sha256": "858d6f556ebbd57f2b90b5b0857b2cdb8022d68841083c5183495e0987bc0b44",
+      "symbols": [
+        "load_metadata",
+        "assert_pilot_ids"
+      ]
+    },
+    "campaign_manifest_generator": {
+      "path": "src/pilot/campaign_split.py",
+      "sha256": "e983b779ca114f626ef2ba61e298a15bd33d9be5243fc484f8a0ec46baeb9556",
+      "symbols": []
+    },
+    "campaign": {
+      "path": "src/campaign/campaign_arms.py",
+      "sha256": "127a60e769cb073ea6c749899913a407462dc9c1b90d6a9566d98d86c6f13448",
+      "symbols": [
+        "campaign_draw",
+        "split",
+        "precision",
+        "evaluate"
+      ]
+    },
+    "campaign_arm_copy": {
+      "path": "src/campaign/run_arms.py",
+      "sha256": "8ce2eb82332b03339f92bb061f5108fadcd70681713f0a8dbc4868583203fdac",
+      "symbols": [
+        "unit",
+        "binary_select"
+      ]
+    },
+    "campaign_inputs_copy": {
+      "path": "src/campaign/pilot_arms.py",
+      "sha256": "b340d8ef51c0c394fd97dc9a73318198abcaf868a2fb95b2e9c46448a86b0704",
+      "symbols": [
+        "CHECKPOINTS"
+      ]
+    },
+    "rereference": {
+      "path": "src/pilot/rereference.py",
+      "sha256": "06c5661ae6d663769c22e343a2bb3691122e51a25cf801888676758f8feab5aa",
+      "symbols": [
+        "fit_rereference",
+        "score_rereference"
+      ]
+    },
+    "draws": {
+      "path": "src/analysis/draws.py",
+      "sha256": "b2c9f533d3403c6790b75a1a7ed2d6c81bd35f15f25c7addcc941bc84855fffe",
+      "symbols": [
+        "draw_labels",
+        "inner_split",
+        "outer_train_test"
+      ]
+    },
+    "models": {
+      "path": "src/analysis/models.py",
+      "sha256": "9ea38bed3644d454720ba10b361d8bd0e990661639ec5da64e2c9b602f016bd2",
+      "symbols": [
+        "make",
+        "HistGBM",
+        "Logistic"
+      ]
+    },
+    "selection": {
+      "path": "src/analysis/selection.py",
+      "sha256": "3a8a8a9aa379351d119cc081673725d65c9937e8a1faa3c813e5e0169e526564",
+      "symbols": [
+        "select_and_refit"
+      ]
+    },
+    "metrics": {
+      "path": "src/analysis/metrics.py",
+      "sha256": "f76185ee2af71670b78e0df7afd3d9ff089dcf14a3dfa4549d6ac0de9a20dd91",
+      "symbols": [
+        "ap",
+        "SortedScore"
+      ]
+    },
+    "inference": {
+      "path": "src/analysis/inference.py",
+      "sha256": "d50b669a1c05584a55b7c0ad46cea366c943780c967bb544587a73e631d0ab94",
+      "symbols": [
+        "bootstrap",
+        "cluster_weights",
+        "p_up",
+        "p_down",
+        "holm",
+        "interval"
+      ]
+    },
+    "features": {
+      "path": "src/analysis/features.py",
+      "sha256": "c25074e2ef1ce16e0f4a2708a39b7df8d31255234217841f620a184c993a9027",
+      "symbols": [
+        "composition_features",
+        "references"
+      ]
+    },
+    "data": {
+      "path": "src/analysis/data.py",
+      "sha256": "19a888340f297b0d0876b692eac379043bc023dd2ac2b34b79d8fbce73ae6d42",
+      "symbols": [
+        "load_part"
+      ]
+    },
+    "config_legacy": {
+      "path": "src/analysis/config.py",
+      "sha256": "deddbcb6a96d6309c52e909d13f70857a57cd0b9a3bef2e0307a2026808617e3",
+      "symbols": [
+        "Config"
+      ]
+    },
+    "s7": {
+      "path": "src/posthoc/s7_additions.py",
+      "sha256": "45e30eb0e07c04ca80d6e86db6b3617d9de894ee7438300f668cec67f925c60e",
+      "symbols": [
+        "shortlist"
+      ]
+    },
+    "s9": {
+      "path": "src/posthoc/s9_additions.py",
+      "sha256": "f5d6032da3c07d27782ac3a2e376ac002f0dd3afc07e9061679476f193a8996a",
+      "symbols": [
+        "h_mp",
+        "select_and_refit_reg",
+        "make_reg"
+      ]
+    },
+    "probe": {
+      "path": "src/probe/probe.py",
+      "sha256": "c6b38d2f19ce7f5ac558f4f0e12fdcafa8eaf98b26ea12e2d7f6760038a1de96",
+      "symbols": [
+        "ridge_path",
+        "ridge_fold",
+        "fit_job",
+        "evaluate"
+      ]
+    },
+    "ft_common": {
+      "path": "src/finetune/finetune_common.py",
+      "sha256": "4da9a43c11d479f3159e4336cf5632fe2daa034558003b25d2b32c2e370760e2",
+      "symbols": [
+        "residual_e0",
+        "run"
+      ]
+    },
+    "ft_pilot_guard": {
+      "path": "src/finetune/pilot_data.py",
+      "sha256": "722e36e2e851c66c3b1d53da9c51d8ebccfb35c26ffd0ec346683494a0ec1456",
+      "symbols": []
+    },
+    "ft_identity": {
+      "path": "src/finetune/identity_check.py",
+      "sha256": "519faea3c40346fe55c7cacb61721c134332346100860f2d3f99e84ca460fe47",
+      "symbols": []
+    },
+    "zero_label_scoring": {
+      "path": "src/reference/zero_label.py",
+      "sha256": "dfe9e5ce1169d1aa4a78ae955979096ddb5ff7c054cfb6a2e96d128d10bb1ff4",
+      "symbols": [
+        "hull_shift"
+      ]
+    },
+    "ft_mace": {
+      "path": "src/finetune/finetune_mace.py",
+      "sha256": "a166e9823e3d910722b3040a1ea1ea86f5ee662970deca0c12717aad69e61a0c",
+      "symbols": []
+    },
+    "ft_orb": {
+      "path": "src/finetune/finetune_orb.py",
+      "sha256": "9c67f9c63ac1dcf5d2db7d634937e75c9764a2bbe7938a1ea255bd06e5306b22",
+      "symbols": []
+    },
+    "a5f": {
+      "path": "src/fixed_head/a5f.py",
+      "sha256": "8bcacefada0c5e11d7901c0c8675bcda4a37570f6ce9b15ab7be9725cb339102",
+      "symbols": [
+        "unit"
+      ]
+    },
+    "a5f_development": {
+      "path": "src/stability/stability_check.py",
+      "sha256": "99f216e1e6a4418240ddf5c449d488c64c87e129f375196efe6b8d97dc299a46",
+      "symbols": [
+        "perturb_inputs"
+      ]
+    },
+    "frozen___init__": {
+      "path": "pipeline/confirm_runner/__init__.py",
+      "sha256": "95398f3229839b76b26c239f3d8cb4064ba09a36247593172b8a24c716818437",
+      "symbols": []
+    },
+    "frozen_common": {
+      "path": "pipeline/confirm_runner/common.py",
+      "sha256": "3951548f7e80222ea2a6925210c0278d7bb6d361e06a664e28053d40ec055b61",
+      "symbols": []
+    },
+    "frozen_config": {
+      "path": "pipeline/confirm_runner/config.py",
+      "sha256": "36fbe2582343c04a08d728a5d1f68d21e11bf1ba7b3ff52fa710ea86a5ba0bdc",
+      "symbols": []
+    },
+    "frozen_ft_data": {
+      "path": "pipeline/confirm_runner/ft_data.py",
+      "sha256": "c8e8257e2f6a6bcf5af542662a52a5254fec827ddb157319e6576e008aca5abe",
+      "symbols": []
+    },
+    "frozen_ft_driver": {
+      "path": "pipeline/confirm_runner/ft_driver.py",
+      "sha256": "6a273bb45698bbde40959ac362581eeda34ad66434ebb163d3e490dffa6484bd",
+      "symbols": []
+    },
+    "frozen_ft_ingest": {
+      "path": "pipeline/confirm_runner/ft_ingest.py",
+      "sha256": "d381bc540cb6c3bd3ff1387418cbcae46f5bed215274321afccdc771aa020834",
+      "symbols": []
+    },
+    "frozen_ft_launcher": {
+      "path": "pipeline/confirm_runner/ft_launcher.py",
+      "sha256": "5994e0a5ae1bbf55253df03528611e8359780f9fe17c8f9d7de28fada10d84ca",
+      "symbols": []
+    },
+    "frozen_ft_prepare": {
+      "path": "pipeline/confirm_runner/ft_prepare.py",
+      "sha256": "d91194e3b8dcecbfa4058b1a058ec848d1b3a2098621f5c45ce3e112a8d6770e",
+      "symbols": []
+    },
+    "frozen_inputs": {
+      "path": "pipeline/confirm_runner/inputs.py",
+      "sha256": "7845d303c00796cb2bc2994401b8f48bd0d74342c63a0ba720748569b4760ff8",
+      "symbols": []
+    },
+    "frozen_labels": {
+      "path": "pipeline/confirm_runner/labels.py",
+      "sha256": "e2aa179f7aaae7e102a0cfed538c7d7072b8ce4e0fbeee664f7b398642902e9e",
+      "symbols": []
+    },
+    "frozen_mechanism": {
+      "path": "pipeline/confirm_runner/mechanism.py",
+      "sha256": "10362d57fe2adfbe06096211048b21f7e9cbe3646b38e37ebbe27dc29b39547c",
+      "symbols": []
+    },
+    "frozen_runner": {
+      "path": "pipeline/confirm_runner/runner.py",
+      "sha256": "c2d88a6689f89b2b26128a408c44ed96112ac6f96d2175a28913ea57276d9c8e",
+      "symbols": []
+    },
+    "frozen_statistics": {
+      "path": "pipeline/confirm_runner/statistics.py",
+      "sha256": "cf4ed24c4ee1a99d88f41b021e575ce6b0661454ade6a8d9e1a777898ed51929",
+      "symbols": []
+    },
+    "frozen_freeze_v2": {
+      "path": "pipeline/integrity.py",
+      "sha256": "0db6606879cb25573dc08311f86feae66e239f403b1c1a8e6c5938588da30c05",
+      "symbols": []
+    },
+    "frozen_launcher": {
+      "path": "pipeline/confirm_ft_launcher.sh",
+      "sha256": "4462882c48c57d45bd46c9168fec272711649a05a135c53dce045d5f938dcd7e",
+      "symbols": []
+    },
+    "frozen_stages": {
+      "path": "pipeline/confirm_runner/stages.py",
+      "symbols": [
+        "finish_stage",
+        "require_previous"
+      ],
+      "sha256": "d3c51f985b37790700e02cde81e67c01a6cd3835487c53602d6efb2d8d3b46dd"
+    },
+    "frozen_calibration": {
+      "path": "pipeline/calibration.py",
+      "sha256": "af8c210fbb1232b84c45ff523d8c0acefbecfe1cfde3c0e411bcc588efd56e8e",
+      "symbols": [
+        "calibrate"
+      ]
+    }
+  }
+}

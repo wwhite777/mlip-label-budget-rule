@@ -1,0 +1,1527 @@
+id: stability_label_budget_v2.4
+contract: pipeline/CONTRACT_v2.4.md
+status: Fixed scientific specification
+issued_date: '2026-10-22'
+claim:
+  purpose: DECISION
+  scope: 'Five specified checkpoints and tested discrete budgets only; no continuous
+    threshold or below/above-budget claim. FT has F4; A1 is descriptive. F1/F2: confirmatory,
+    exposure-informed; not independent confirmations of an unseen population.'
+  attribution_limit: F1 evaluates the combined pipeline; it does not isolate an encoder-feature
+    contribution beyond A4/ENS.
+  low_budget_threat: A5f at n<=1000 was never run on PILOT; its high-budget-fixed
+    point is untuned at low budgets, which can ease a negative F2 reading.
+  statement: 'For the five frozen draws, conditional on fitted models, the exposure-informed
+    claim is: at the tested label budgets of 300 and 1,000, the frozen correction
+    set of F2 does not exceed the strongest measured zero-shot comparator by the practical
+    margin; at 10,000, at least one A5f tree head on frozen features plus zero-shot
+    hull distances adds beyond that margin. The 3,000-label result and mechanism are
+    reported separately. A1-equivalent residual heads nested in A5f inputs were already
+    seen on CONFIRM.'
+exposure:
+  all_arms_developed_on: PILOT
+  new_confirmatory_arms:
+  - A5f
+  - A4
+  - C1
+  - E0
+  - FT
+  A1: A1-equivalent residual heads had prior CONFIRM exposure and are DESCRIPTIVE
+    in every design, checkpoint and budget, including ORB and campaign variants.
+  known_record: Earlier evaluation included A1-equivalent residual heads, frozen-head
+    budget sweeps, delta analyses, and mechanism/feature controls. The evaluation
+    population was previously used for related results.
+  g001: Flawed raw-total E0 replacement; retained provenance, excluded as a tested
+    FT arm.
+  g002: Residual E0, relaxed-geometry pilot seen; no confirmatory FT choice inferred
+    from it.
+  g003: Completed residual-E0 initial-geometry PILOT G003 (); below zero-shot; G004
+    foundation-E0 relaxed variant chosen in .
+  wording: F1/F2 are confirmatory, exposure-informed comparisons, conditional on five
+    fixed label draws and fitted models.
+  g004: Completed foundation-E0 relaxed PILOT G004 (); development choice stated explicitly.
+  A5: inner-selected A5 DESCRIPTIVE in every design after numerical instability on
+    PILOT.
+  A5f: fixed modal point chosen on reused PILOT selections; mildly optimistic PILOT
+    performance. A1-equivalent inputs nested within A5f were seen on CONFIRM; new
+    combined A5f itself not previously run.
+  FT: G004 chosen among G002-G004 on PILOT; G001 void. No tested valid pilot recipe
+    exceeded zero-shot.
+  new_confirmatory_arms_note: New combinations/recipes; this does not assert independence
+    from prior CONFIRM exposure or that ORB was unseen.
+  ORB: ORB had evaluation outcomes at all four scheduled budgets. Exact combined A5f,
+    A4, ENS, RR and full fine-tuning recipes had no recorded prior outcomes.
+  record_limit: Some original residual-fit outputs are unavailable; the table distinguishes
+    retained outcomes from scope reconstructed from the fixed specification and export
+    metadata.
+  table:
+    path: pipeline/EXPOSURE_TABLE.csv
+    sha256: f8b4dafe18562a6d95f4971e906706170e20ea97c19f69f2777371e3ff52113c
+population:
+  universe_n: 215488
+  filter: unique_prototype == True
+  confirm_n: 172689
+  confirm_systems: 59319
+  pilot_n: 42799
+  pilot_systems: 14830
+  partition_seed: 20261002
+  partition:
+    path: result/splits/partition_v1/partition.csv.gz
+    sha256: 7f8462bd84d454762537291834781d194e52bbbef1b537b41d692b0735027d87
+  summary:
+    path: cache/mbd/2023-12-13-wbm-summary_v64706751.csv.gz
+    sha256: adbdd8b24086d4888195d8894c77f6d5fb29ce33bbb5d7d3898b4d79e964dc54
+    figshare_file_id: 64706751
+  initial_structures:
+    path: cache/mbd/2022-10-19-wbm-init-structs.json.bz2
+    sha256: 4cc43e87c1ddfe97edc7445f62ab14c11e1f261fba3a2709805ec1812f842b7d
+    figshare_file_id: 40344466
+  relaxed_structures_ft_targets:
+    path: cache/wbm/wbm_cse.json.bz2
+    sha256: 478f676e07c877109b638c2588a1dabf71f8872109a0d132fc99ad4d7bf351a6
+    figshare_file_id: 40344463
+  data_hash_verification: All input identities below are checked before computation.
+labels:
+  stability:
+    column: e_above_hull_mp2020_corrected_ppd_mp
+    positive_if: <=
+    threshold_eV_atom: 0.0
+    positive_class: 1
+    name: fixed-MP-hull stability
+  formation: e_form_per_atom_mp2020_corrected
+  regenerate: false
+  gap_record:
+    column: bandgap_pbe
+    positive_if: '>='
+    threshold_eV: 1.0
+    role: Frozen predecessor confirmatory record only; no new fit, scoring, bootstrap,
+      selection or reading.
+inputs:
+  primary: initial structures; frozen mean-pooled scalar-node features
+  pymatgen_version: 2023.5.10
+  energy_convention: MP2020 once on initial structure via pymatgen 2023.5.10; CHGNet
+    no second correction, exclusively _nomp2020.
+  hull: Fixed MP composition hull, never rebuilt from WBM labels or fitted-arm energies.
+  registry:
+    path: research/REFERENCE_REGISTRY_v1.csv
+    sha256: 4aa2189ac7025cfc41ce9acf77ff92eaeab1740881d46acf5d3dd9796d4ebe24
+  feature_hash_override_authority: The accepted regenerated feature arrays failed
+    two equivalence-check points, including the retained numerical-equivalence check.
+    The explicit feature_inputs hashes define the accepted inputs; legacy registry
+    hashes differ. No silent replacement or bypass of these checks is allowed.
+  feature_inputs:
+    mace_medium:
+      path: cache/features/wbm_full_mace_medium_initial.npz
+      sha256: a172ece88008650051b78051cd0fe29595d2c16f1e309f8f1b6ef2b71807cc09
+    chgnet:
+      path: cache/features/wbm_full_chgnet_initial.npz
+      sha256: 11453f62a9051d76b744fc5f70a1163189c1a86a7479661860d074d0c54b341d
+    sevenn:
+      path: cache/features/wbm_full_sevenn_initial.npz
+      sha256: 18e41afe89f62f46e546d22af16145df74425033100bfebd6aee3237a9b83c2e
+    mattersim_5m:
+      path: cache/features/wbm_full_mattersim_5m_initial.npz
+      sha256: 4a957d4d7afdaf6e02b4105b9034f728d56426cf58d6965e4dcde4996d0cba12
+    orb:
+      path: cache/features/wbm_full_orb_initial.npz
+      sha256: c257a9fa796713a1a385f0056f38843c7165551cbad0974fb6e78124b59ed425
+  reference_inputs:
+    mace_medium:
+      path: result/reference/zero_label_sp_mace_medium_initial.csv.gz
+      sha256: 69dd03c764a36196c5dd2bd9cce84269a0d3fc02ef47ad8d8446c117dbf0dd81
+    chgnet:
+      path: result/reference/zero_label_sp_chgnet_initial_nomp2020.csv.gz
+      sha256: be0a8e4896e025f61734836caa4c5df4cc2b287f042eb833d4cf5919e920ad24
+    sevenn:
+      path: result/reference/zero_label_sp_sevenn_initial.csv.gz
+      sha256: fa4c5238671f1a61a5ea93e3fd9140ecb8cbee1c159b06ab453d85c316f30b58
+    mattersim_5m:
+      path: result/reference/zero_label_sp_mattersim_5m_initial.csv.gz
+      sha256: d93496403e305e74343595cae6cb4ef03460176c0d92a303491918d87f3b86b0
+    orb:
+      path: result/reference/zero_label_sp_orb_initial.csv.gz
+      sha256: 87d23bf4cb76b16bc5bbf1dd122435a9fad8372902daa66d18a4dcab28a3ec2c
+  composition_dim: 89
+  element_basis:
+    path: cache/mbd/2025-02-01-mp-energies.csv.gz
+    sha256: f1d083a56cacb02cdcb556830f58216890f84503c6a19e1c53bf92939aaedb8e
+  auxiliary:
+    partition_loaded_columns:
+      path: result/splits/partition_v1/loaded_columns.json
+      sha256: d4a25cb635cabf319302cf799802925444196d65f506483576daf819d6e851ac
+    mp2020_corrections_initial:
+      path: cache/reference/mp2020_corr_pmg2023.5.10_initial.npz
+      sha256: a30e106c4ddfb1523727b40983c9e715bb750947cf7b77ced39a5a8534036029
+  ft_elemental_references:
+    path: cache/reference/mbd_cache/mp/2023-02-07-mp-elemental-reference-entries.json.gz
+    sha256: 9fd6ef848a91c88840a0d1709b5856d0edb4af22095237e59db52f2acd6bbf79
+  checkpoint_inputs:
+    mace_medium:
+      path: checkpoints/mace_medium
+      sha256: 01bfe22100139f424713cf921144e5509cbe353d67aa9fa1be9c6e1e0ed35845
+    chgnet:
+      path: checkpoints/chgnet
+      sha256: d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1
+    sevenn:
+      path: checkpoints/sevenn
+      sha256: 7052cb42b7b3be42b40b97fa0d21077a48c54b5548948fc4dcf346629f813c36
+    mattersim_5m:
+      path: checkpoints/mattersim_5m
+      sha256: e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5
+    orb:
+      path: checkpoints/orb
+      sha256: bd1840d1488f3cd01d213970d9618a63f971590ad45e5e83bf5404d4b95d216a
+backbones:
+  order:
+  - mace_medium
+  - chgnet
+  - sevenn
+  - mattersim_5m
+  - orb
+  count: 5
+  names:
+  - MACE-MP-0 medium (2023-12-03 L1)
+  - CHGNet 0.3.0
+  - SevenNet-0 (11Jul2024)
+  - MatterSim v1.0.0 5M
+  - ORB v3 conservative-inf-mpa
+  orb_caveat: Non-invariant descriptor and broader pretraining; the predecessor exploratory
+    role does not limit its inclusion in the new five-checkpoint families.
+  checkpoint_bytes: The five checkpoint hashes are explicit and correspond to the
+    feature/reference inputs; the MatterSim checkpoint is the 5M version.
+designs:
+  P:
+    role: primary
+    part: CONFIRM
+    n_folds: 5
+    fold_seed: 0
+    folds:
+      path: result/splits/partition_v1/confirm/splits_chemsys_seed0.csv.gz
+      sha256: 4708a9d07037ddb7d3fd41cf4ae6e8b19ad959906f68ce34bf840dd9e6f319a0
+    draw_fold_multiplier: 1000
+    draw_seed_offset: 0
+    draw: Canonical lexicographic material_id outer-training order; default_rng(draw_fold_multiplier*f+r+draw_seed_offset).choice(train_size,size=n,replace=False).
+      Identical draws shared by all arms; budgets use the same seed formula, not enforced
+      nested subsets.
+    budget_unit: n labels per outer-fold learner, not n labels total over all folds
+      or replicates.
+  S:
+    role: secondary, separate readings for S-a and S-b
+    train_rounds:
+    - 1
+    - 2
+    test_rounds:
+    - 3
+    - 4
+    - 5
+    train_n: 80311
+    train_systems: 33645
+    sampler_seed_offset: 500000
+    sampler_budget_multiplier: 1000
+    inner_fold_index: 0
+    draw: 'campaign campaign_draw: sort pool IDs; sort unique systems; default_rng(sampler_seed_offset+sampler_budget_multiplier*n+r).permutation(systems);
+      concatenate canonical IDs within whole systems until reaching n, truncate final
+      system to exact n. Not uniform structure sampling.'
+    fit_reuse: One fit and draw scores the full S-a test set; S-b is its fixed subset.
+      Same training pool and model choices. No new tuning on either test set.
+    S-a:
+      test_n: 92378
+      test_systems: 42998
+      shared_train_test_systems: 17324
+      assignment:
+        path: data/inputs/campaign_confirm_s-a.csv.gz
+        sha256: bec5e1a9d3b0e69a16abc75481d5637562dcee47c05770fd026ab4d9b602099e
+    S-b:
+      test_n: 35152
+      test_systems: 25674
+      excluded_test_n: 57226
+      shared_train_test_systems: 0
+      assignment:
+        path: data/inputs/campaign_confirm_s-b.csv.gz
+        sha256: 37c1b523a592e2885039a84e7081045670bb3e50662326a7950cf3c3d9d48add
+replicates:
+  ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  mean_scores_allowed: false
+  missing_or_partial: No reading from partial folds or a reduced replicate set; report
+    incomplete, no substitution by PILOT.
+budgets:
+  confirmatory:
+  - 300
+  - 1000
+  - 3000
+  - 10000
+  descriptive_only:
+  - 100
+  FT_scope: F4 budgets 1000 and 3000, all five draws; descriptive P n10000 draw 0
+    only.
+inner:
+  fraction: 0.2
+  seed_offset: 7
+  rule: 'v1.2 inner_split: sorted distinct draw chemical systems, default_rng(P.draw_fold_multiplier*f+r+seed_offset)
+    permutation; take complete systems until cumulative count first reaches fraction*n.
+    S uses f=S.inner_fold_index. Validation can exceed the fraction.'
+  selection: Highest inner-validation AP for each learner separately; first grid point
+    wins exact ties; refit on all n drawn labels. No outer labels in selection, standardization
+    or prior estimation.
+  single_class: 'Exact arms binary_select fallback: if inner fit or validation is
+    single-class, first grid for each type without grid evaluation; inner diagnostic
+    equals validation prevalence. If full draw single-class, constant class score;
+    else refit first grid on full draw. No redraw. C1 always tunes by AP and first-grid
+    ties, including all-zero validation AP. Empty inner split is a hard error.'
+  empty_split: STOP; amendment required before retry, no redraw
+  scope: Shared draw-system split. AP grid selection applies only to inner-selected
+    CPU arms; A5f has no selection; FT uses strict validation per-atom MSE with epoch
+    zero selectable.
+models:
+  hist_gbm:
+    learning_rate:
+    - 0.05
+    - 0.1
+    max_leaf_nodes:
+    - 15
+    - 31
+    max_iter: 300
+    random_state: 0
+    early_stopping: false
+    scale: none
+    grid_order: learning_rate outer loop, max_leaf_nodes inner loop; other defaults
+      pinned to sklearn version
+  logistic_descriptive:
+    C:
+    - 0.01
+    - 0.1
+    - 1.0
+    - 10.0
+    max_iter: 2000
+    class_weight: null
+    scale: StandardScaler fitted on phase-training rows only; lbfgs
+  c1:
+    alphas:
+    - 0.01
+    - 0.1
+    - 1.0
+    - 10.0
+    - 100.0
+    solver: svd
+    fit_intercept: true
+    scale: none; raw fractions, float64
+  tie_order:
+  - logistic
+  - hist_gbm
+arms:
+  notation: F_k=frozen initial features; c=raw element fractions; hhat_k=stored zero-shot
+    signed hull distance; f_DFT=corrected formation label; h_MP=e_form_pred_sp-hhat_k.
+  R0:
+    score: -hhat_k
+    labels: none
+  R0_star:
+    definition: max_k AP(R0_k) on the same evaluation population; deterministic references
+      have identical replicate metrics; recompute the maximum for every bootstrap
+      draw, never freeze the observed winner
+    deployable_model: false
+    name: the strongest measured zero-shot comparator
+    interpretation: Evaluation-label oracle over five fixed references; not a deployable
+      selection rule. Matched-checkpoint F3/F4 are separate.
+  E0:
+    score: -mean_k(hhat_k)
+    labels: none
+    disambiguation: E0 ensemble arm differs from elemental atomic E0 offsets in FT;
+      neither median nor probability averaging is the named ensemble.
+    prose_name: ENS
+  C1:
+    objective: sum((f_DFT-e_form_pred_sp-b-c@delta)^2)+alpha*sum(delta^2)
+    score: -(hhat_k+b+c@delta)
+    hull: fixed; retain fold intercepts when pooling
+    model: models.c1
+    prose_name: RR; distinct from predecessor C1 membership association
+  A4:
+    X: '[hhat_all,c]'
+    model: hist_gbm
+    selection: HistGBM only for confirmatory contrasts; logistic and best menu outputs
+      are descriptive; composition is present in the code tree variant.
+  A5:
+    X: '[float64(F_k),hhat_all]'
+    model: hist_gbm
+    score: predict_proba(stable)
+    role: DESCRIPTIVE everywhere; inner-selected HistGBM retained.
+  A1:
+    X: '[float64(F_k),hhat_k]'
+    models:
+    - logistic
+    - hist_gbm
+    - best
+    role: DESCRIPTIVE in every cell, no readings
+  FT:
+    variant: full
+    geometry: relaxed
+    e0: foundation
+    epoch0: foundation checkpoint; selectable; E0 frozen and excluded from AdamW
+    seed_rule: 1000*fold+draw (P); 1000*5+draw (S)
+    seed_fold_multiplier: 1000
+    seed_S_fold: 5
+    scoring: INITIAL geometry, MP2020 once, rounded elemental references, fixed MP
+      hull derived from pinned reference predictions; no test labels in training or
+      energy conversion
+    selection: strict inner-validation per-atom MSE improvement including epoch 0;
+      fresh foundation refit on all draw IDs for exactly selected epochs
+    development_ref: exposure.FT
+    target: raw relaxed CSE DFT total energy; only drawn training IDs through verified
+      freeze guard
+    recipe_ref: ft_recipe
+  other_cells: Any emitted cell outside the exact family definitions is descriptive,
+    including A2/A3, A4 logistic/best and E0 median; no added run is authorized just
+    by this catch-all.
+  A5f:
+    X: '[float64(F_k),hhat_all]'
+    model: hist_gbm
+    selection: none; one fit on all n draw labels
+    fixed_params:
+      learning_rate: 0.05
+      max_leaf_nodes: 31
+    defaults_ref: models.hist_gbm
+    role: confirmatory in exact F1/F2 cells
+    development_ref: exposure.A5f
+    fixed_setting:
+      path: src/fixed_head/fixed_setting.json
+      sha256: f1fecde115b903268aee68ff2eeda95fe84ff5d23be46060614b2cee463efe8b
+metrics:
+  primary: sklearn.metrics.average_precision_score
+  sklearn_version: 1.7.2
+  weighting: structure, step-wise AP
+  P: For each r, pool scores of its held-out outer-fold pipelines over the full CONFIRM
+    population; M_r=AP(y,s_r); M=mean_r(M_r). Never mean fold AP or replicate scores.
+  S: For each r, AP on the fixed variant test population; M=mean_r(M_r). No outer-fold
+    averaging or synthetic five-fold pooling in S.
+  report: Every AP has structure count, positive count and prevalence; retain scores,
+    IDs, replicate, fold, draw, inner split, selected parameters and flags.
+  top_fraction: 0.05
+  precision: 'Descriptive; ceil(top_fraction*N) for every new analysis. P learners:
+    per fold then pooled hits/selected; S: per variant test set; mechanism: per reporting
+    population. Score-descending/material_id-ascending ties.'
+  half_round: 0.5
+  missing: Nonfinite labels hard error as predecessor. arms requires complete finite
+    five-reference and feature coverage; do not drop or impute silently. Broader predecessor
+    intersection sensitivities are not the primary v2 population.
+  half_round_role: Legacy inactive provenance only; no new analysis uses it.
+  label_finiteness: Check all requested labels at run start, after verified freeze;
+    STOP on any nonfinite value, no fallback/intersection.
+inference:
+  B: 2000
+  seed: 20261022
+  coverage: 0.9
+  percentiles:
+  - 5
+  - 95
+  alpha: 0.05
+  bootstrap: Paired chemical-system cluster, conditional on fitted models. Sort evaluation
+    systems; fresh default_rng(seed) per design; draw as many systems with replacement
+    as present; carry all structures and every arm/replicate score with cluster multiplicities.
+    P resamples all CONFIRM systems; S resamples test systems only; no refitting or
+    resampling training labels.
+  recompute: Recompute all weighted M_r then M, oracle R0_star (for reporting) and
+    F2 contender maximum after replicate aggregation. F1 up component tests and F1/F2
+    down fixed-ORB tests never subtract a resampled reference maximum.
+  p_up: '(1 + #{d* <= m}) / (B + 1)'
+  p_down: '(1 + #{d* >= m}) / (B + 1)'
+  up_null: d <= m
+  down_null: d >= m
+  interval: Unadjusted two-sided nominal percentile summary; numpy.percentile linear;
+    interval does not determine reading.
+  percentile_band_qualification: Oracle and contender-maximum percentile bands are
+    descriptive, nominal percentile summaries; their coverage can be poor at ties
+    and they must not be presented as calibrated 90 % confidence intervals.
+  multiplicity: Separate directional Holm families within each family AND design.
+    No pooling across directions, designs or families; no global familywise error
+    claim. Holm ties by contrast name.
+  readings:
+    ADDS: 'F1: Holm-adjusted max_k p_up,k <= alpha; F3/F4: ordinary matched-reference
+      Holm up. F2 up is descriptive only.'
+    DOES_NOT_EXCEED: 'down Holm-adjusted p <= alpha: increment below +m, not zero
+      benefit'
+    otherwise: INCONCLUSIVE
+  invalid: Nonfinite bootstrap contrasts stop readings. Undefined descriptive AUROC
+    draws are omitted with counts; this omission rule is new in v2.3, not inherited
+    from v1.2.
+  fixed_down_reference: R0_orb
+  fixed_reference_selection: ORB v3, best PILOT design-P reference; fixed before CONFIRM;
+    never reselected per design or bootstrap.
+  F1_up: 'IUT: p_IUT=max_k p_up(M(arm)-M(R0_k)); apply family Holm to these per-contrast
+    p-values.'
+  F1_F2_down: Test against fixed R0_orb, a sufficient condition for the strongest
+    measured zero-shot comparator; F2 keeps the contender maximum.
+  F2_up: DESCRIPTIVE ONLY; no confirmatory ADDS reading from the contender maximum.
+  down_reporting: Every DOES_NOT_EXCEED reading is reported with its down_estimate
+    and down_interval against fixed ORB; the oracle estimate is labelled descriptive.
+  calibration_regression_scope: 'The original family rates used identical contrasts.
+    When the other contrasts are clearly rejected, the family error equals the scalar
+    tail: approximately 0.056 at N = 1,000 and approximately 0.051 at N = 59,319 in
+    the binary construction. The gate checks reproduced fixture values +/- Monte Carlo
+    tolerance as a regression check; it does not assert family-level error control.'
+  draw_spread: Report sample SD (ddof=1) of M_r next to every reading, with reference
+    SD and contrast-draw SD; fixed point-estimate winners for maxima. Training draw/refit
+    variability is not included in cluster intervals.
+margin:
+  AP: 0.02
+  common: true
+  rationale_v1_2: below about 2 points of average precision a practitioner would not
+    change pipelines given the cost of 3,000 DFT labels
+  scope: Common fixed 0.02 AP at every tested budget; no budget-specific tuning or
+    continuous-threshold claim.
+  rationale_by_budget:
+    n300: A minimal label purchase warrants a gain large enough to change the screening
+      pipeline; the same practical AP floor avoids treating tiny cheap-budget shifts
+      as useful.
+    n1000: An intermediate label purchase still requires the same pipeline-changing
+      AP gain, rather than a smaller significance-driven threshold.
+    n3000: This is the historical reference cost underlying the practical AP floor;
+      it is reported separately and cannot rescue success.
+    n10000: The largest label investment must clear at least the same practical AP
+      floor; the high-budget F1 test is the informative part of the success conjunction.
+  information: Low-budget DOES_NOT_EXCEED was expected from PILOT for related controls;
+    it is weak additional evidence. A5f itself was never run at n<=1000 on PILOT,
+    so this expectation does not guarantee success. F1 at 10000 is the informative
+    test.
+families:
+  designs:
+  - P
+  - S-a
+  - S-b
+  F1:
+    n: 10000
+    size: 6
+    directions:
+    - up
+    - down
+    contrasts: M(A5f_k)-M(R0_star) for every backbone, plus M(A4 hist_gbm)-M(R0_star)
+    contrast_specs:
+    - arm: A5f
+      model: hist_gbm
+      checkpoint_ref: backbones.order
+      reference: R0_star
+    - arm: A4
+      model: hist_gbm
+      checkpoint: ensemble
+      reference: R0_star
+    role: confirmatory, exposure-informed; descriptive if any C05 A5f source FAIL
+      or missing
+    up_test: IUT max component p, followed by six-contrast family Holm
+    down_test: fixed R0_orb sufficient condition, followed by six-contrast family
+      Holm
+  F2:
+    budgets:
+    - 300
+    - 1000
+    - 3000
+    size: 3
+    contenders_n: 12
+    directions:
+    - down
+    - up
+    contenders:
+    - A5f_mace_medium
+    - A5f_chgnet
+    - A5f_sevenn
+    - A5f_mattersim_5m
+    - A5f_orb
+    - A4_hist_gbm
+    - C1_mace_medium
+    - C1_chgnet
+    - C1_sevenn
+    - C1_mattersim_5m
+    - C1_orb
+    - E0_mean
+    contrast: d_max(n)=max_a M(a,n)-M(R0_star)
+    bootstrap: Maximum of contender replicate-mean APs, minus fixed R0_orb for down
+      tests. Report oracle difference separately; oracle-maximum up tails are descriptive
+      only.
+    exclusions:
+    - A1
+    - FT
+    - A2
+    - A3
+    - A5
+    operator: maximum_over_replicate_mean_AP_then_subtract_fixed_R0_orb_for_down
+    role: confirmatory, exposure-informed; descriptive if any C05 A5f source FAIL
+      or missing
+    up_role: DESCRIPTIVE_ONLY
+  F3:
+    n: 10000
+    size: 5
+    directions:
+    - down
+    - up
+    contrasts: M(C1_k)-M(R0_k)
+    role: negative control; down is below positive practical margin, not proof of
+      equality or harm
+    contrast_spec:
+      arm: C1
+      model: ridge
+      checkpoint_ref: backbones.order
+      reference: same_checkpoint_R0
+  F4:
+    budgets:
+    - 1000
+    - 3000
+    checkpoints:
+    - mace_medium
+    - orb
+    size: 4
+    directions:
+    - up
+    - down
+    contrasts: M(FT_k)-M(R0_k)
+    status: ACTIVE; P primary, S-a/S-b secondary; separate directional Holm over all
+      four contrasts in each design; outside success rule
+    contrast_spec:
+      arm: FT
+      checkpoint_ref: families.F4.checkpoints
+      reference: same_checkpoint_R0
+      active_ref: execution.active_F4
+      model: full
+success:
+  design: P
+  low_budgets_required:
+  - 300
+  - 1000
+  low_reading: F2 DOES_NOT_EXCEED at BOTH budgets
+  high_family: F1
+  high_reading: ADDS for at least one A5f contrast
+  high_min_contrasts: 1
+  conjunction: true
+  otherwise: Report as observed; no outcome-dependent change to the specified scope.
+  not_required: F2 at its remaining budget, F3, F4 and secondary designs do not change
+    this rule.
+  high_arms:
+  - A5f
+  high_models:
+  - hist_gbm
+  low_family: F2
+  low_required_reading: DOES_NOT_EXCEED
+  high_required_reading: ADDS
+  low_budget_operator: all
+  completion: Judge as soon as all design-P F1 and F2 contrasts are complete; F3/F4/S/mechanism
+    may be incomplete or fail.
+probe:
+  role: descriptive mechanism only, no readings
+  design: P only; same outer folds, all outer-training CONFIRM labels (not an n-label
+    correction learner); no replicate dimension
+  inputs:
+  - features
+  - composition
+  - features+composition
+  targets:
+  - e_k=e_form_pred_sp
+  - h=e_k-hhat_k
+  - f=corrected_DFT_formation
+  - y=signed_DFT_hull_distance
+  - error_k=f-e_k
+  ridge_alphas:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  - 100.0
+  - 1000.0
+  ridge: Train-only StandardScaler and intercept; leave each other outer-training
+    fold out for inner CV; choose each target alpha by pooled inner MAE, first alpha
+    on exact ties; refit all outer-training rows.
+  tree:
+    learning_rate: 0.1
+    max_leaf_nodes: 31
+    max_iter: 200
+    min_samples_leaf: 20
+    l2_regularization: 1.0
+    early_stopping: false
+    random_state: 0
+  scores:
+  - -(decoded_f-exact_h)
+  - -decoded_y
+  - -(decoded_e_k-exact_h)
+  - -(decoded_e_k-decoded_h)
+  metrics:
+  - MAE
+  - RMSE
+  - R2
+  - explained_variance
+  - bias
+  - pooled_AP
+  - precision_top_fraction
+  - per_fold
+  boundary_meV_atom:
+  - 25
+  - 50
+  - 100
+  eV_to_meV: 1000
+  common_h_tolerance_eV_atom: 1.0e-05
+  correction_strata:
+    file: result/membership/correction_regime_flags.csv.gz
+    sha256: 39482a55a9d7c197686e9c065ed38a4e592dc5bcc1b68801593246bf74d9c5c8
+    strata:
+    - oxidation_state_dependent_anion
+    - hubbard_u_metal_with_O_or_F
+  strata: Correction flags true/false and disjoint joint strata; element count; cumulative
+    inclusive absolute-y boundary windows. Report sizes, prevalence, within-stratum
+    flip rates and shares of all flips.
+  caveat: Finite decoder performance is not proof of irreversible feature information
+    loss; full-range R2 does not establish precision at the hull. No causal MP2020
+    claim.
+  precision_rounding: ceil
+descriptive:
+  no_readings: true
+  cells: Every remaining arm x budget x design cell; all A1; descriptive budget; AUROC;
+    top-fraction precision; per-round test results; mechanism; numerical noise.; every
+    inner-selected A5; FT at n=10000 P draw 0 only, no F4 reading
+  per_round: In S, re-evaluate retained replicate scores separately within each specified
+    test round and variant; no additional fitting or winner selection.
+  intervals: Same conditional cluster-bootstrap settings for descriptive AP/AUROC
+    contrasts; no Holm and no readings. Precision, strata and numerical-noise diagnostics
+    follow pinned source reporting; interval convention beyond source output requires
+    specification before affected analysis.
+  band_gap: Frozen predecessor confirmatory result carried over as a labelled historical
+    record; no new analysis in this protocol.
+  A2_A3_record: PILOT negative; cite CONFIRM delta record descriptively, no rerun.
+  interval_comparators: Point/interval per retained method; checkpoint-specific methods
+    versus their own R0; ensemble methods versus each fixed R0, labelled descriptive.
+    AP/AUROC use paired draws; undefined AUROC counts reported. No readings.
+noise:
+  single_unit_noninterpretation_AP: 0.01
+  relative_gaussian_scale: 1.0e-07
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  unit:
+    n: 3000
+    fold: 0
+    replicate: 0
+  definition: 'arms noise_unit: keep selected params fixed; max absolute inner AP
+    change under seeded relative Gaussian input perturbations. Encoder inputs in original
+    float32 for feature arms; fractions for C1/A3; learner inputs for A4; scoring/target
+    reference values held fixed, perturbed fractions not renormalized. Local diagnostic,
+    not an uncertainty bound.'
+  pre_freeze_issue: Apply the fixed PILOT stability criterion below before interpreting
+    the comparisons. A failing or missing source makes all F1/F2 readings descriptive;
+    no grid or input change.
+  confirm_scope: Apply the specified local diagnostic to new CPU arms using P and
+    campaign inner units, descriptive only; no gate tuning on CONFIRM.
+  pre_freeze_check:
+    part: PILOT
+    design: P
+    n: 10000
+    replicate: 0
+    arms:
+    - A4_hist_gbm
+    - A5f_mace_medium
+    - A5f_chgnet
+    - A5f_sevenn
+    - A5f_mattersim_5m
+    - A5f_orb
+    seeds:
+    - 0
+    - 1
+    - 2
+    relative_gaussian_scale: 1.0e-07
+    max_pooled_AP_shift: 0.005
+    perturb: Encoder features and hull distances only; composition fractions unchanged;
+      refit whole selected pooled out-of-fold pipeline for each noise seed.
+    failure: Any FAIL A5f source makes all F1/F2 readings descriptive; no silent source
+      deletion or family resize. Missing source evidence likewise blocks confirmation.
+    evidence_status: COMPLETE_stability_fixed_head_exposure_ALL_FIVE_A5f_SOURCES_PASS
+cost:
+  gpu_cap_hours: 90
+  gpu_used_hours_at_issue: 16.9
+  gpu_remaining_hours_at_issue: 73.1
+  cpu_arms_estimate_hours: 3
+  ft_grid:
+    P_fits: 100
+    S_fits_shared_variants: 20
+    total_fits: 120
+    descriptive_P_fits: 10
+    total_with_descriptive: 130
+  g004_measured_gpu_hours:
+    mace_medium: 0.09223073767549876
+    orb: 0.05559133303817362
+  budget_scaling_n_reference: 1000
+  pilot_test_n: 8560
+  confirm_P_test_n_total: 172689
+  confirm_S_a_test_n: 92378
+  grid_nominal_gpu_hours: 19.376810184218904
+  descriptive_nominal_gpu_hours: 7.133482081991401
+  total_nominal_gpu_hours: 26.510292266210307
+  F4_scoring_gpu_hours: 2.674657412560948
+  descriptive_scoring_gpu_hours: 0.17425176046725452
+  full_grid_scoring_share: 0.10746426876098182
+  planning_factors:
+  - 0.5
+  - 2.0
+  grid_planning_range_gpu_hours:
+  - 13.255146133105153
+  - 53.020584532420614
+  grid_ceiling_proxy_gpu_hours: 120.44191365049775
+  estimate: From G004 actual driver wall timing. Both initial-test forward passes
+    scale with test N; remaining time scales linearly with n/1000 including overhead.
+    Five P folds sum to CONFIRM N. S-a scored once; S-b is subset. Foundation epoch0/final
+    share driver. Graph building, correction and I/O test costs not separately timed;
+    scoring share is forward-only lower bound. Early stopping and setup can change;
+    range is not a bound.
+  cap_rule: Count allocated GPU wall once per driver, failures and retries; cumulative
+    cap, stop and report incomplete.
+implementation:
+  imports:
+    arms:
+      path: src/arms/run_arms.py
+      sha256: 8ce2eb82332b03339f92bb061f5108fadcd70681713f0a8dbc4868583203fdac
+      symbols:
+      - unit
+      - binary_select
+      - reg_select
+      - assemble
+      - baselines
+      - noise_unit
+    arm_inputs:
+      path: src/arms/pilot_arms.py
+      sha256: b340d8ef51c0c394fd97dc9a73318198abcaf868a2fb95b2e9c46448a86b0704
+      symbols:
+      - CHECKPOINTS
+      - perturb_features
+    pilot_guard:
+      path: src/pilot/pilot_data.py
+      sha256: 858d6f556ebbd57f2b90b5b0857b2cdb8022d68841083c5183495e0987bc0b44
+      symbols:
+      - load_metadata
+      - assert_pilot_ids
+    campaign_manifest_generator:
+      path: src/pilot/campaign_split.py
+      sha256: e983b779ca114f626ef2ba61e298a15bd33d9be5243fc484f8a0ec46baeb9556
+      symbols: []
+    campaign:
+      path: src/campaign/campaign_arms.py
+      sha256: 127a60e769cb073ea6c749899913a407462dc9c1b90d6a9566d98d86c6f13448
+      symbols:
+      - campaign_draw
+      - split
+      - precision
+      - evaluate
+    campaign_arm_copy:
+      path: src/campaign/run_arms.py
+      sha256: 8ce2eb82332b03339f92bb061f5108fadcd70681713f0a8dbc4868583203fdac
+      symbols:
+      - unit
+      - binary_select
+    campaign_inputs_copy:
+      path: src/campaign/pilot_arms.py
+      sha256: b340d8ef51c0c394fd97dc9a73318198abcaf868a2fb95b2e9c46448a86b0704
+      symbols:
+      - CHECKPOINTS
+    rereference:
+      path: src/pilot/rereference.py
+      sha256: 06c5661ae6d663769c22e343a2bb3691122e51a25cf801888676758f8feab5aa
+      symbols:
+      - fit_rereference
+      - score_rereference
+    draws:
+      path: src/analysis/draws.py
+      sha256: b2c9f533d3403c6790b75a1a7ed2d6c81bd35f15f25c7addcc941bc84855fffe
+      symbols:
+      - draw_labels
+      - inner_split
+      - outer_train_test
+    models:
+      path: src/analysis/models.py
+      sha256: 9ea38bed3644d454720ba10b361d8bd0e990661639ec5da64e2c9b602f016bd2
+      symbols:
+      - make
+      - HistGBM
+      - Logistic
+    selection:
+      path: src/analysis/selection.py
+      sha256: 3a8a8a9aa379351d119cc081673725d65c9937e8a1faa3c813e5e0169e526564
+      symbols:
+      - select_and_refit
+    metrics:
+      path: src/analysis/metrics.py
+      sha256: f76185ee2af71670b78e0df7afd3d9ff089dcf14a3dfa4549d6ac0de9a20dd91
+      symbols:
+      - ap
+      - SortedScore
+    inference:
+      path: src/analysis/inference.py
+      sha256: d50b669a1c05584a55b7c0ad46cea366c943780c967bb544587a73e631d0ab94
+      symbols:
+      - bootstrap
+      - cluster_weights
+      - p_up
+      - p_down
+      - holm
+      - interval
+    features:
+      path: src/analysis/features.py
+      sha256: c25074e2ef1ce16e0f4a2708a39b7df8d31255234217841f620a184c993a9027
+      symbols:
+      - composition_features
+      - references
+    data:
+      path: src/analysis/data.py
+      sha256: 19a888340f297b0d0876b692eac379043bc023dd2ac2b34b79d8fbce73ae6d42
+      symbols:
+      - load_part
+    config_legacy:
+      path: src/analysis/config.py
+      sha256: deddbcb6a96d6309c52e909d13f70857a57cd0b9a3bef2e0307a2026808617e3
+      symbols:
+      - Config
+    s7:
+      path: src/posthoc/s7_additions.py
+      sha256: 45e30eb0e07c04ca80d6e86db6b3617d9de894ee7438300f668cec67f925c60e
+      symbols:
+      - shortlist
+    s9:
+      path: src/posthoc/s9_additions.py
+      sha256: f5d6032da3c07d27782ac3a2e376ac002f0dd3afc07e9061679476f193a8996a
+      symbols:
+      - h_mp
+      - select_and_refit_reg
+      - make_reg
+    probe:
+      path: src/probe/probe.py
+      sha256: c6b38d2f19ce7f5ac558f4f0e12fdcafa8eaf98b26ea12e2d7f6760038a1de96
+      symbols:
+      - ridge_path
+      - ridge_fold
+      - fit_job
+      - evaluate
+    ft_common:
+      path: src/finetune/finetune_common.py
+      sha256: 4da9a43c11d479f3159e4336cf5632fe2daa034558003b25d2b32c2e370760e2
+      symbols:
+      - residual_e0
+      - run
+    ft_pilot_guard:
+      path: src/finetune/pilot_data.py
+      sha256: 722e36e2e851c66c3b1d53da9c51d8ebccfb35c26ffd0ec346683494a0ec1456
+      symbols: []
+    ft_identity:
+      path: src/finetune/identity_check.py
+      sha256: 519faea3c40346fe55c7cacb61721c134332346100860f2d3f99e84ca460fe47
+      symbols: []
+    zero_label_scoring:
+      path: src/reference/zero_label.py
+      sha256: dfe9e5ce1169d1aa4a78ae955979096ddb5ff7c054cfb6a2e96d128d10bb1ff4
+      symbols:
+      - hull_shift
+    ft_mace:
+      path: src/finetune/finetune_mace.py
+      sha256: a166e9823e3d910722b3040a1ea1ea86f5ee662970deca0c12717aad69e61a0c
+      symbols: []
+    ft_orb:
+      path: src/finetune/finetune_orb.py
+      sha256: 9c67f9c63ac1dcf5d2db7d634937e75c9764a2bbe7938a1ea255bd06e5306b22
+      symbols: []
+    a5f:
+      path: src/fixed_head/a5f.py
+      sha256: 8bcacefada0c5e11d7901c0c8675bcda4a37570f6ce9b15ab7be9725cb339102
+      symbols:
+      - unit
+    a5f_development:
+      path: src/stability/stability_check.py
+      sha256: 99f216e1e6a4418240ddf5c449d488c64c87e129f375196efe6b8d97dc299a46
+      symbols:
+      - perturb_inputs
+    frozen___init__:
+      path: pipeline/confirm_runner/__init__.py
+      sha256: 95398f3229839b76b26c239f3d8cb4064ba09a36247593172b8a24c716818437
+      symbols: []
+    frozen_common:
+      path: pipeline/confirm_runner/common.py
+      sha256: 3951548f7e80222ea2a6925210c0278d7bb6d361e06a664e28053d40ec055b61
+      symbols: []
+    frozen_config:
+      path: pipeline/confirm_runner/config.py
+      sha256: 36fbe2582343c04a08d728a5d1f68d21e11bf1ba7b3ff52fa710ea86a5ba0bdc
+      symbols: []
+    frozen_ft_data:
+      path: pipeline/confirm_runner/ft_data.py
+      sha256: c8e8257e2f6a6bcf5af542662a52a5254fec827ddb157319e6576e008aca5abe
+      symbols: []
+    frozen_ft_driver:
+      path: pipeline/confirm_runner/ft_driver.py
+      sha256: 6a273bb45698bbde40959ac362581eeda34ad66434ebb163d3e490dffa6484bd
+      symbols: []
+    frozen_ft_ingest:
+      path: pipeline/confirm_runner/ft_ingest.py
+      sha256: d381bc540cb6c3bd3ff1387418cbcae46f5bed215274321afccdc771aa020834
+      symbols: []
+    frozen_ft_launcher:
+      path: pipeline/confirm_runner/ft_launcher.py
+      sha256: 5994e0a5ae1bbf55253df03528611e8359780f9fe17c8f9d7de28fada10d84ca
+      symbols: []
+    frozen_ft_prepare:
+      path: pipeline/confirm_runner/ft_prepare.py
+      sha256: d91194e3b8dcecbfa4058b1a058ec848d1b3a2098621f5c45ce3e112a8d6770e
+      symbols: []
+    frozen_inputs:
+      path: pipeline/confirm_runner/inputs.py
+      sha256: 7845d303c00796cb2bc2994401b8f48bd0d74342c63a0ba720748569b4760ff8
+      symbols: []
+    frozen_labels:
+      path: pipeline/confirm_runner/labels.py
+      sha256: e2aa179f7aaae7e102a0cfed538c7d7072b8ce4e0fbeee664f7b398642902e9e
+      symbols: []
+    frozen_mechanism:
+      path: pipeline/confirm_runner/mechanism.py
+      sha256: 10362d57fe2adfbe06096211048b21f7e9cbe3646b38e37ebbe27dc29b39547c
+      symbols: []
+    frozen_runner:
+      path: pipeline/confirm_runner/runner.py
+      sha256: c2d88a6689f89b2b26128a408c44ed96112ac6f96d2175a28913ea57276d9c8e
+      symbols: []
+    frozen_statistics:
+      path: pipeline/confirm_runner/statistics.py
+      sha256: cf4ed24c4ee1a99d88f41b021e575ce6b0661454ade6a8d9e1a777898ed51929
+      symbols: []
+    frozen_freeze_v2:
+      path: pipeline/integrity.py
+      sha256: 0db6606879cb25573dc08311f86feae66e239f403b1c1a8e6c5938588da30c05
+      symbols: []
+    frozen_launcher:
+      path: pipeline/confirm_ft_launcher.sh
+      sha256: 4462882c48c57d45bd46c9168fec272711649a05a135c53dce045d5f938dcd7e
+      symbols: []
+    frozen_stages:
+      path: pipeline/confirm_runner/stages.py
+      symbols:
+      - finish_stage
+      - require_previous
+      sha256: d3c51f985b37790700e02cde81e67c01a6cd3835487c53602d6efb2d8d3b46dd
+    frozen_calibration:
+      path: pipeline/calibration.py
+      sha256: af8c210fbb1232b84c45ff523d8c0acefbecfe1cfde3c0e411bcc588efd56e8e
+      symbols:
+      - calibrate
+  required_adapter: Pinned unchanged arms/campaign and fixed_head A5f functions; finetune
+    training loop/backends unchanged with guarded prepare and label-free energy conversion;
+    v2.3 CPU/FT scoring, inference and judge.
+  config: confirm_runner.config.V2Config translates v2 head grids for unchanged source
+    helpers; no legacy Config.build or predecessor success rule.
+  maxima: Recompute R0_star and F2 contender max after replicate-mean AP in each resample.
+  reproducibility: Keep ordered IDs, chemical systems, fold/draw/inner sets, chosen
+    grids, package versions, source/input hashes, score arrays and cost ledger. Synthetic
+    planted drift tests must cover maxima, family counts, held-out independence, row
+    order, CHGNet double correction, and incomplete data before CONFIRM use.
+run_matrix:
+  named_cpu:
+    designs:
+    - P
+    - S-a
+    - S-b
+    budget_set_refs:
+    - budgets.confirmatory
+    - budgets.descriptive_only
+    replicate_ref: replicates.ids
+    fitted:
+    - arm: C1
+      model: ridge
+      checkpoint_ref: backbones.order
+    - arm: A4
+      models:
+      - hist_gbm
+      - logistic
+      - best
+      checkpoint: ensemble
+      confirmatory_model: hist_gbm
+    - arm: A5
+      model: hist_gbm
+      checkpoint_ref: backbones.order
+      readings: false
+    - arm: A1
+      models:
+      - logistic
+      - hist_gbm
+      - best
+      checkpoint_ref: backbones.order
+      readings: false
+    - arm: A5f
+      model: hist_gbm
+      checkpoint_ref: backbones.order
+      confirmatory_model: hist_gbm
+    campaign_fit_once_for_variants: true
+    role: 'C14: n=100 P only; only exact family cells receive readings; all A1 and
+      A4 logistic/best descriptive. add A5f, demote all inner-selected A5.'
+    budgets_by_fit_design:
+      P:
+      - 100
+      - 300
+      - 1000
+      - 3000
+      - 10000
+      S:
+      - 300
+      - 1000
+      - 3000
+      - 10000
+  label_free:
+  - R0_each_checkpoint
+  - E0_mean
+  computed_comparator: R0_star from reference AP; not a score vector
+  FT:
+    scope_ref: families.F4
+    active_ref: execution.active_F4
+    designs:
+    - P
+    - S-a
+    - S-b
+    replicate_ref: replicates.ids
+    campaign_fit_once_for_variants: true
+    descriptive:
+      budgets:
+      - 10000
+      design: P
+      replicates:
+      - 0
+      checkpoints:
+      - mace_medium
+      - orb
+      readings: false
+  additional_source_outputs: Retain emitted A4 logistic/best and P E0 median as descriptive.
+    A2/A3 and other historical controls are not scheduled by this card; if retained
+    or later authorized, always descriptive.
+  mechanism_ref: probe
+  excluded_confirm_arms:
+  - A2
+  - A3
+validation_inputs:
+  pilot_folds:
+    path: result/splits/partition_v1/pilot/splits_chemsys_seed0.csv.gz
+    sha256: a3d6638a300aa8c5571777d66bec974a3632603b7c16278fef4d19a2156fc6b9
+  ft_smoke_ids:
+    train:
+      path: src/finetune/dryrun_ids/train.txt
+      sha256: 0702cbbb483e7aca6769b8a18b524dc74df4a0c07fdf1302705de77e6fc88e4b
+    fit:
+      path: src/finetune/dryrun_ids/fit.txt
+      sha256: 9716743d22c3a9e11fe44e399254b8ba22463d19d982e1bdaac14a52b0cab03a
+    valid:
+      path: src/finetune/dryrun_ids/valid.txt
+      sha256: 8fe82a1583f86235cc6338b1aff9a4661ef4443ace1a1f12a7f955317a1a4249
+    test:
+      path: src/finetune/dryrun_ids/test.txt
+      sha256: 9c84224aeda57d1c575d2341167d1999daee8c2fdc82f50e2cea425bf347551a
+  a5f_additional_check:
+    path: pipeline/stability_check_3sources.csv
+    sha256: 212a85cf257fa0125f0dce4c4aa5c384067c596a4f882de4bf3c03ae00b4a6b2
+  oracle_calibration:
+    path: pipeline/calibration/calibration.json
+    sha256: a8172009337d6cefc3009b3addcf1a6f8775ab445f04962405cf0d892bda6ab0
+  oracle_calibration_data:
+    path: pipeline/calibration/calibration_data.npz
+    sha256: 4bf4349befbf3144ee8f4b267d5e9ddcb374540a552681136ac3e9878cd65f26
+execution_checks:
+  synthetic:
+    designs:
+    - P
+    - S
+    budgets:
+    - 300
+    - 1000
+    replicates:
+    - 0
+    - 1
+    B: 200
+    includes:
+    - A5f
+    scores_saved_replicates:
+    - 0
+  ft_ingestion: Synthetic complete F4 test-energy files through scoring/bootstrap/judge;
+    no GPU
+  ft_launcher: CPU --dry-run on exactly eight PILOT structures, both backbones; resumable
+    hash-checked completion markers; real mode verifies the published protocol hashes
+ft_recipe:
+  active: true
+  epochs_max: 100
+  patience: 15
+  epoch_zero: 0
+  batch_size: 8
+  full_lr: 0.0001
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1.0e-08
+  weight_decay: 0.0
+  identity_tolerance_eV_atom: 2.0e-06
+  loop: Strict inner-validation per-atom MSE improvement; frozen foundation E0; fresh
+    checkpoint per phase; exactly selected epochs on all draw IDs; no scheduler/replay;
+    float32-highest
+  e0: foundation
+  optimizer: AdamW
+  epoch0_selectable: true
+  train_geometry: relaxed
+  variant: full
+training_data_overlap:
+  mace_medium:
+    declared_training_sets:
+    - MPtrj
+    membership: UNVERIFIED exact checkpoint roster and WBM structure/prototype overlap
+  chgnet:
+    declared_training_sets:
+    - MPtrj
+    membership: UNVERIFIED exact checkpoint roster and WBM structure/prototype overlap
+  sevenn:
+    declared_training_sets:
+    - MPtrj
+    membership: UNVERIFIED exact checkpoint roster and WBM structure/prototype overlap
+  mattersim_5m:
+    declared_training_sets:
+    - MatterSim
+    membership: UNVERIFIED exact checkpoint roster and WBM structure/prototype overlap
+  orb:
+    declared_training_sets:
+    - MPtrj
+    - Alex
+    - OMat24
+    membership: UNVERIFIED exact checkpoint roster and WBM structure/prototype overlap
+  interpretation: Checkpoint identity does not establish training-set membership.
+    The ORB declarations differ in scope; no WBM overlap control or checkpoint-specific
+    exclusion is established.
+execution:
+  active_F4: true
+  C05_resolution: All five fixed A5f sources PASS the specified PILOT numerical-stability
+    criterion. A failed or missing source makes all F1/F2 readings descriptive, retaining
+    the complete family and source set.
+  C05_A5f_verdicts:
+    mace_medium: PASS
+    chgnet: PASS
+    sevenn: PASS
+    mattersim_5m: PASS
+    orb: PASS
+  execution_order:
+  - CPU-P
+  - judge
+  - CPU-S
+  - FT-P
+  - FT-S
+  - mechanism
+  metadata_allowlist:
+  - material_id
+  - formula
+  - unique_prototype
+  - n_sites
+  optional_CPU_P_failures: Failed or unavailable F3/ancillary CPU-P units are logged
+    explicitly, without partial F3 readings; complete F1/F2 still determine success.
+    Required F1/F2 unit or population failures stop their judgment. No specification,
+    input or family size changes.
+  stage_chain: Each completed stage binds earlier stage manifests and all output hashes
+    locally. The mechanism stage may use terminal INCOMPLETE_CAP fine-tuning stages;
+    missing F4 cells receive no reading.
+timing_statement: The protocol was fixed before the evaluation population was scored
+  for these methods; earlier related results on the same population are listed in
+  the exposure table.
+amendment_A2:
+  title: 'Amendment A2: relaxed-reference extension'
+  version: '2.4'
+  scope: 'Additive only: the v2.3.1 specification, readings and decision rule stand
+    unchanged. The extension has a separate judge.'
+  arms:
+    A5fR:
+      sources:
+      - mace_medium
+      - chgnet
+      - sevenn
+      - mattersim_5m
+      - orb
+      inputs:
+      - frozen source encoder features cast float64
+      - five relaxed hull distances
+      model: hist_gbm
+      learning_rate: 0.05
+      max_leaf_nodes: 31
+      max_iter: 300
+      early_stopping: false
+      random_state: 0
+      fit: all n drawn labels
+      inner_selection: false
+    A4R:
+      inputs:
+      - five relaxed hull distances
+      - composition fractions
+      model: hist_gbm
+      learning_rate:
+      - 0.05
+      - 0.1
+      max_leaf_nodes:
+      - 15
+      - 31
+      max_iter: 300
+      early_stopping: false
+      random_state: 0
+      selection: unchanged binary_select; shared inner split; first exact tie; refit
+        all n
+    ENS-R:
+      inputs:
+      - five relaxed hull distances
+      score: negative strict arithmetic mean
+      label_free: true
+    A5fRS:
+      inputs:
+      - frozen source encoder features cast float64
+      - five single-point hull distances
+      - five relaxed hull distances
+      sources:
+      - mace_medium
+      - chgnet
+      - sevenn
+      - mattersim_5m
+      - orb
+      head: same fixed A5fR head
+      role: descriptive only; excluded from F5, F6 and extension rule
+  comparator:
+    scores:
+    - R0_mace_medium
+    - R0_chgnet
+    - R0_sevenn
+    - R0_mattersim_5m
+    - R0_orb
+    - R0R_mace_medium
+    - R0R_chgnet
+    - R0R_sevenn
+    - R0R_mattersim_5m
+    - R0R_orb
+    - ENS
+    - ENS-R
+    count: 12
+    maximum: maximum of replicate-mean AP, recomputed after aggregation in every bootstrap
+    ENS: negative arithmetic mean of five single-point hull distances
+    ADDS: 'intersection-union: max of twelve component upward p-values, then family
+      Holm'
+    fixed_down_reference: R0R_orb
+    fixed_down_reason: relaxed ORB selected as best label-free score on PILOT before
+      new CONFIRM evaluation; fixed across all designs and bootstraps; sufficient
+      condition for strongest label-free comparator
+  families:
+    F5:
+      n: 10000
+      size: 6
+      arms:
+      - A5fR_mace_medium
+      - A5fR_chgnet
+      - A5fR_sevenn
+      - A5fR_mattersim_5m
+      - A5fR_orb
+      - A4R
+      up: IUT over twelve references then Holm; ADDS
+      down: fixed relaxed ORB then Holm; DOES_NOT_EXCEED
+    F6:
+      budgets:
+      - 300
+      - 1000
+      - 3000
+      size: 3
+      contenders:
+      - A5fR_mace_medium
+      - A5fR_chgnet
+      - A5fR_sevenn
+      - A5fR_mattersim_5m
+      - A5fR_orb
+      - A4R
+      - ENS-R
+      up: descriptive only
+      down: contender maximum minus fixed relaxed ORB then Holm; DOES_NOT_EXCEED
+  extension_rule:
+    design: P
+    conjunction: true
+    low_family: F6
+    low_budgets_required:
+    - 300
+    - 1000
+    low_required_reading: DOES_NOT_EXCEED
+    high_family: F5
+    high_arms:
+    - A5fR
+    high_required_reading: ADDS
+    high_min_contrasts: 1
+    budget_3000_in_rule: false
+    interpretation: relax, then correct, scoped to the specified F6 contender set
+  designs:
+    P: primary; same five frozen outer folds, draws and inner splits
+    S_a: secondary; same frozen campaign draws, inner splits and S-a test set
+    S_b: secondary; same fitted models as S-a; fixed S-b subset
+  budgets:
+  - 300
+  - 1000
+  - 3000
+  - 10000
+  replicates:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  inference:
+    margin_AP: 0.02
+    B: 2000
+    seed: 20261022
+    seed_restart: per evaluation design P, S-a, S-b
+    alpha: 0.05
+    coverage: 0.9
+    percentiles:
+    - 5
+    - 95
+    p_up: '(1 + #{d* <= m}) / (B + 1)'
+    p_down: '(1 + #{d* >= m}) / (B + 1)'
+    multiplicity: separate directional Holm within family and design; no global FWER
+      claim
+    bootstrap: unchanged paired chemical-system cluster weights; M*=mean_r weighted
+      AP_r; no refitting
+    uncertainty: conditional on fitted models and five frozen draws; percentile bands
+      for maxima descriptive, not calibrated confidence intervals; report draw sample
+      SD
+  scoring: unchanged sklearn 1.7.2 AP; P pooled out-of-fold AP per draw, then mean;
+    S test AP per draw, then mean; AUROC and per-fold-ceil top-5 percent precision
+    descriptive
+  missing:
+    trees: NaN into HistGBM, no imputation or dropping
+    label_free: missing ranks last, ties below every available score
+    ensemble: strict five-source mean; any missing source makes ENS-R missing
+    infinity: hard error
+    labels: nonfinite labels hard stop
+  development_choices:
+    fixed_head: The fixed A5f head was selected on reused PILOT and retained without
+      new tuning.
+    fixed_reference: relaxed ORB selected on PILOT as best label-free score
+    F6_set: 'Development choice: RR/C1 re-references single-point formation energies;
+      no relaxed analogue was developed on PILOT. Seven rather than twelve contenders
+      can ease DNE; relax, then correct is scoped to this set, fixed before relaxed-arm
+      results.'
+    report_comparator: Use twelve-score LF_max. The earlier six-score relaxed oracle
+      was equal on PILOT only.
+    source: PILOT only; no claim of independent development validation
+  interpretive_limits:
+    attribution: F5 does not isolate encoder-feature attribution beyond A4R/ENS-R;
+      no confirmatory contrast against A4R.
+    low_budget: Fixed high-budget head is untuned at 300/1000; this can ease the required
+      DNE leg.
+    informative_leg: PILOT suggests the low leg; F5 at 10000 is the informative leg.
+      Reused PILOT increments may not transfer.
+  exposure:
+    wording: confirmatory, exposure-informed
+    relaxed_references: Evaluation performance of the relaxed references was previously
+      seen in the earlier study and its follow-up analysis.
+    new_arms: A5fR, A4R, ENS-R and A5fRS have never touched CONFIRM labels before
+      this amendment
+    question: Post hoc question prompted by earlier evaluation results; the tests
+      were specified before the new relaxed correction arms were evaluated.
+    known_reference_values: AP and top-5 percent precision were inspected in P, S-a
+      and S-b; reference values are not new results.
+    known_ORB_rank: 'Relaxed ORB rank was known when fixed: primary AP 0.9349424282920303
+      versus MatterSim 0.9182220284944321.'
+    known_predecessor: v2.3.1 CONFIRM A5f/A4/E0 outcomes at every budget and the met
+      rule were known at design time.
+    frozen_refit: Two frozen-arm units were refit using 10,941 evaluation-population
+      training labels, without evaluation-label parsing or evaluation.
+    checkpoint_identity: Released relaxed-prediction checkpoint identity with frozen
+      encoders is assumed, not proven.
+    qualification: Confirmatory, exposure-informed; not independent confirmation on
+      globally unseen CONFIRM. All constants and the rule inherited from predecessor
+      freeze.
+  C05:
+    criterion: 'unchanged specified choice: max_seed abs(pooled AP_seed - pooled AP_0)
+      <= 0.005'
+    part: PILOT
+    design: P
+    n: 10000
+    draw: 0
+    seeds:
+    - 0
+    - 1
+    - 2
+    relative_gaussian_scale: 1.0e-07
+    feature_dtype: float32
+    hull_dtype: float64
+    composition_unchanged: true
+    perturbation_order: all five full feature arrays in frozen source order, then
+      row-major relaxed hull matrix
+    sources:
+    - mace_medium
+    - chgnet
+    - sevenn
+    - mattersim_5m
+    - orb
+    A4R_required: true
+    verdicts:
+      mace_medium: PASS
+      chgnet: PASS
+      sevenn: PASS
+      mattersim_5m: PASS
+      orb: PASS
+    A4R_verdict: PASS
+    failure: 'missing check blocks freeze; any FAIL makes all F5/F6 descriptive, no
+      deletion or resizing; current all-PASS schema cannot authorize failed-C05 evidence:
+      a newly reviewed schema/document and evidence binding is required'
+  environment:
+    python: Python 3.10.12; requirements-cpu.txt
+    device: CPU
+    max_threads: 12
+    compute_workers: 10
+    native_threads_per_worker: 1
+    packages:
+      numpy: 2.2.6
+      pandas: 2.3.3
+      scikit-learn: 1.7.2
+      scipy: 1.15.3
+      pyyaml: 6.0.3
+      threadpoolctl: 3.7.0
+      joblib: 1.6.0
+      pytest: 9.1.1
+  stage:
+    name: CPU-R
+    after: mechanism
+    existing_outputs: Read only; separate extension output root
+    integrity: Published specifications and code, then the complete local predecessor
+      chain, checked before labels
+    original_predecessor_sha256:
+      CPU-P: f0e09f4e8b2f02bbaeff4ceed2790ca7d5ebc635029a4316d49afd83f72167fd
+      judge: 7e75672b9604754e9d86620201b3e7e5ff5ef4572b3bb4e422c09db470632aa9
+      CPU-S: 08c005f98b245b1386e19de5a07e89297282c0f5c30ff0a2c22127ec318b79a6
+      FT-P: 62fd8590ec3d194e51ab351f30aa20f2800bf8780594e1e6be8c77c699d295c9
+      FT-S: 78bd09f2c07af69a0488134bcb97c4dc21cbb77892a9f5f49768c3dc4dc1705a
+      mechanism: 60218da5f258cdd9702937a7ad3b95e658a4fdee6235d45139c1d0d01b130a95
+  relaxed_column: e_hull_pred_is2re
+  machinery: Frozen draws, inner splits, scoring and bootstrap primitives reused;
+    separate extension judge implements amendment rule
+  relaxed_inputs:
+    mace_medium.csv.gz:
+      path: result/reference/zero_label_is2re_mace-mp-0.csv.gz
+      sha256: f6700222ea0e55cc4ddf63f68cf5924c4ea59486e917545bddf8917504f12aa4
+    mace_medium.json:
+      path: result/reference/zero_label_is2re_mace-mp-0.json
+      sha256: e1bc99e26a613e37184dae78fefebeeaa07d09514dc853a464e2a9f880f54870
+    chgnet.csv.gz:
+      path: result/reference/zero_label_is2re_chgnet-0.3.0.csv.gz
+      sha256: 4c238010d09b66700caaaf3cb78d8eaf28dd0443331ad6fa3867b19a9025e7c5
+    chgnet.json:
+      path: result/reference/zero_label_is2re_chgnet-0.3.0.json
+      sha256: f490a884aff14258bcea0321d3c698a302416d046ebdd9b0d84d99ecc9d4fda9
+    sevenn.csv.gz:
+      path: result/reference/zero_label_is2re_sevennet-0.csv.gz
+      sha256: c04b4115b96b0bd1202ebee86b2796bddd9185636e86de68397d895c6bb3f3de
+    sevenn.json:
+      path: result/reference/zero_label_is2re_sevennet-0.json
+      sha256: e830c656333068d94a5e9a6c863817e3f30063b143d7f8435cf2390c12a1a232
+    mattersim_5m.csv.gz:
+      path: result/reference/zero_label_is2re_mattersim-v1-5m.csv.gz
+      sha256: bd32d7b8985ee6b2159191b222ca25852eb520a749d67ea1a492a501706772e2
+    mattersim_5m.json:
+      path: result/reference/zero_label_is2re_mattersim-v1-5m.json
+      sha256: d4d862a67063054e3a0c04f04906799bdd62100e684e5a8cfa53bcb45c84abb6
+    orb.csv.gz:
+      path: result/reference/zero_label_is2re_orb-v3.csv.gz
+      sha256: 2992356a25115fdc521c04106e2767b2d1d1152d7a2e74f982ff417ad94353e7
+    orb.json:
+      path: result/reference/zero_label_is2re_orb-v3.json
+      sha256: e9fe0478d1d380b1d30c93ed0bce116b8bd2fdec109a4bdfce0b40bf50f2bd88

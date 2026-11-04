@@ -1,0 +1,39 @@
+{
+  "2.3.1": {
+    "protocol": {
+      "sha256": "8e57bfa25f64fcb3057809ce1867b2c485b43083a27a070a7f43f3c57342d6a1",
+      "bytes": 61614
+    },
+    "contract": {
+      "sha256": "3979253916753fc63a75b013448dd93dbbb999fe61df4fa5b5a690fcbfa99f50",
+      "bytes": 34719
+    },
+    "receipt": {
+      "sha256": "ab7f04bf37504dfaebd277fddff1e3eb9e7e231347378776dd813346b67a369b",
+      "bytes": 24184
+    }
+  },
+  "2.4": {
+    "protocol": {
+      "sha256": "61c7a4bef478877c89c7b679cbae7fc04821bc149616d1c8067d1d627a2573bb",
+      "bytes": 74957
+    },
+    "contract": {
+      "sha256": "30cf5f67840ab061727a4f890c7fa03283248e210f90d31612cd57229bf85ecd",
+      "bytes": 59491
+    },
+    "receipt": {
+      "sha256": "0cb3d369390cccc41776f05736b40059f591c9618dd626839bb1c9350346fa1a",
+      "bytes": 27366
+    }
+  },
+  "stages": {
+    "CPU-P": "f0e09f4e8b2f02bbaeff4ceed2790ca7d5ebc635029a4316d49afd83f72167fd",
+    "judge": "7e75672b9604754e9d86620201b3e7e5ff5ef4572b3bb4e422c09db470632aa9",
+    "CPU-S": "08c005f98b245b1386e19de5a07e89297282c0f5c30ff0a2c22127ec318b79a6",
+    "FT-P": "62fd8590ec3d194e51ab351f30aa20f2800bf8780594e1e6be8c77c699d295c9",
+    "FT-S": "78bd09f2c07af69a0488134bcb97c4dc21cbb77892a9f5f49768c3dc4dc1705a",
+    "mechanism": "60218da5f258cdd9702937a7ad3b95e658a4fdee6235d45139c1d0d01b130a95",
+    "CPU-R": "dffe219a15010e17cb0fb4f2233064799421b355ba3bfc73ffcb840b55e0bcaa"
+  }
+}

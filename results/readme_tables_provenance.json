@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "results/CPU-P/readings.json": "835c5e83c4e6acb9d2c33767583a844ec5e955fbd52236222e58aee604c4dc17",
+    "results/CPU-S/readings.json": "5b8d6a659fc27344774df4c8b58ec22a7df444d16977679cb5affaf2ecafe037",
+    "results/FT-P/readings.json": "e729d0f232ef166b7d7e8d7fb5893b756b4d2d458b17e0962c2ebfb3060f093f",
+    "results/FT-S/readings.json": "7ea011a41c6a77d7e7173b3a61c138608a37fb6d7fb0f706a759b70a20237b92",
+    "results/CPU-R/readings.json": "3d38bd15859454addc5e2c88069b8a9da4c37c9176f5d00b18837fd2117adc9f",
+    "results/CPU-P/judge.json": "c44a4cdb0d29317919d8d39942e9ca4aef43888ea3ba474be9f84f6593ffbc48",
+    "results/CPU-R/judge.json": "404ad888bce680a61ea49710af6923fe1741948b84955842acef87dd21694e9f"
+  },
+  "table_sha256": "1cf06d9ddc2f1eeb9296eac50201df8ca8559e6b15563a1156c557b280685a65"
+}
