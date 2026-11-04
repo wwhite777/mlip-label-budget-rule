@@ -12,13 +12,13 @@ ADDS means evidence for an AP increment above the practical margin **0.02**, usi
 
 These are **confirmatory, exposure-informed** comparisons. Earlier results on the same population informed the questions and some choices. The extension question was prompted by previously seen reference performance, and the relaxed ORB rank was known when it was fixed. The tests for the new correction arms were specified before their evaluation. The comparisons are conditional on fitted models and five fixed label draws. Oracle and contender-maximum percentile bands are descriptive nominal summaries, with potentially poor coverage at ties. Encoder training-set overlap is unverified; relaxed-reference checkpoint identity with the frozen encoders is assumed, not proven. Feature-plus-energy stacks do not isolate the contribution of encoder features. The low-budget conclusion is limited to the specified contender sets and the fixed heads.
 
-All six original stages and the appended CPU-R stage are terminal in this release. Fine-tuning is reported against matched source references, outside the primary rules. Mechanism results use all outer-training rows and are descriptive. Figure 1 is supplied when available; otherwise `results/figure_slots.json` explicitly lists its unfilled slot.
+All six original stages and the appended CPU-R stage are terminal in this release. Fine-tuning is reported against matched source references, outside the primary rules. Mechanism results use all outer-training rows and are descriptive.
 
 ## Limitations
 
 These results come from an exposure-informed evaluation of a previously analysed population. Earlier performance on the same candidates was known when parts of the comparison were specified. The results concern five frozen label draws, with inference conditional on the fitted models. The uncertainty calculations do not cover retraining, fresh label draws or model-selection variability.
 
-The conclusions apply only to the tested label budgets and correction methods. At 10,000 labels, the corrections to relaxed references clear the practical margin with only small headroom. The tested budgets do not locate a continuous threshold at which corrections start to help. The unseen-system results are inconclusive about exceeding the practical margin.
+The conclusions apply only to the tested label budgets and correction methods. At 10,000 labels, the corrections to relaxed references clear the practical margin with only small headroom. The tested budgets do not locate a continuous threshold at which corrections start to help. No unseen-system comparison establishes exceedance of the margin; the high-budget feature classifiers are inconclusive.
 
 The relaxed predictions were taken from released prediction tables. Their checkpoint identity is assumed, rather than proven, to match the frozen encoders. Overlap between the original model training sets and this evaluation population has not been verified.
 
@@ -89,7 +89,7 @@ uv pip install --python .venv-e3nn/bin/python --index-strategy unsafe-best-match
 
 ## Restore and reproduce
 
-Repository: <https://github.com/wwhite777/mlip-label-budget-rule>. Versioned archive DOI: **10.5281/zenodo.23944808**. Predecessor: **10.5281/zenodo.23151416**. The release DOI was reserved for this candidate; publication is a separate action.
+Repository: <https://github.com/wwhite777/mlip-label-budget-rule>. Versioned archive DOI: **10.5281/zenodo.23944808**. Predecessor: **10.5281/zenodo.23151416**. Release: **v1.0.1** (https://github.com/wwhite777/mlip-label-budget-rule/tree/v1.0.1).
 
 Obtain the archive's small control files and all tar parts. From their parent directory:
 

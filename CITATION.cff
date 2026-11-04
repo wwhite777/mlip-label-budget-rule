@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite this version using the metadata below."
 type: software
-title: "Label-budget rules for correcting interatomic-potential stability scores"
-version: "2.0.0-rc1"
-date-released: 2026-11-04
+title: "Label-budget corrections for crystal-stability screening with single-point and relaxed zero-shot references: code, frozen protocols, splits, scores and results"
+version: "1.0.1"
+date-released: 2026-11-05
 doi: 10.5281/zenodo.23944808
 repository-code: "https://github.com/wwhite777/mlip-label-budget-rule"
 url: "https://doi.org/10.5281/zenodo.23944808"

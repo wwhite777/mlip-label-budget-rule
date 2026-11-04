@@ -1,12 +1,8 @@
-# Release 2 candidate
+# Release v1.0.1
 
-This version is associated with reserved DOI 10.5281/zenodo.23944808 and repository https://github.com/wwhite777/mlip-label-budget-rule. It extends predecessor archive 10.5281/zenodo.23151416.
+Release date: 2026-11-05. Repository: https://github.com/wwhite777/mlip-label-budget-rule/tree/v1.0.1.
+Archive DOI: **10.5281/zenodo.23944808**. Predecessor archive: **10.5281/zenodo.23151416**.
 
-- Adds the fixed v2.4 relaxed-reference extension, CPU-R code, twelve-reference comparison, separate F5/F6 families and separate success judge. The original v2.3.1 rule and its reported readings are retained.
-- Replaces pending fine-tuning and mechanism slots with terminal reported outputs. Includes per-unit fine-tuning energy tables, mechanism predictions and prepared inference inputs, with all model weights excluded.
-- Includes complete primary and secondary CPU-R per-unit scores, metrics, bootstrap arrays, inference inputs and readings.
-- Adds the light CPU environment, relocatable extension gate, complete predecessor checks, generated README tables, archived-inference replay and synthetic extension checks.
-- Extends source and data hash bindings, the public-file scanner and deterministic archive restore checks. Every part is strictly below 80,000,000 bytes.
-- Updates both-author citation metadata and repository/archive identifiers. Figure 1 is copied from the current figure supply when present; otherwise its slot is explicitly listed.
+This is a documentation-only change against v1.0. It finalizes the release version, archive title, date and citation metadata; clarifies the unseen-system limitation; and removes obsolete wording about Figure 1 and release preparation. Archive manifests and checksums bind the updated documentation.
 
-This is a prepared local candidate. Repository publication and archive publication are separate actions. The protocol transformation record distinguishes exact original identities from public scientific views.
+Scientific code, protocols, contracts, splits, features, predictions, numerical results, readings, figures and both decision rules are unchanged from v1.0. No fitting, inference or scientific analysis was rerun for this documentation release. The protocol transformation record continues to distinguish exact original identities from public scientific views.

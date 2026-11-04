@@ -13,4 +13,4 @@ Run on the pristine public distribution and restored archive with the pinned lig
 - Check repository and archive `SHA256SUMS` and exact inventories. Do not add weights, local environments or execution outputs to the pristine trees.
 - Materialize deterministic tar parts in a fresh directory, verify all part and chunk hashes, restore into a fresh directory and check every reconstructed file hash. The archive tools include corruption, truncation, path and destination controls.
 
-These are construction and reproduction checks. Publication is a separate action. The exact-original-content limitation in `TRANSFORMATIONS.md` remains explicit.
+These checks reproduce the released results; they do not modify the release. The exact-original-content limitation in `TRANSFORMATIONS.md` remains explicit.
